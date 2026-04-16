@@ -69,24 +69,27 @@ export default function AboutContent() {
                 />
                 <div className="mt-8 space-y-6 text-charcoal-600 text-body leading-relaxed">
                   <p>
-                    Williams Capital Group, LLC was established to provide
-                    accredited investors with access to a fixed-income
-                    alternative backed by real estate collateral. From inception,
-                    our mandate has been clear: protect investor capital while
-                    generating consistent, risk-adjusted returns.
+                    Williams Capital Group LLC is dedicated to fulfilling its
+                    mission of delivering a stable and consistent income stream
+                    to investors while prioritizing capital preservation. The
+                    firm operates with a steadfast commitment to maintaining a
+                    healthy margin of safety in every investment it undertakes.
                   </p>
                   <p>
-                    Over 11 years and $170M+ in deployed capital, we&apos;ve funded
-                    more than 400 transactions across residential, multifamily,
-                    and commercial real estate — maintaining conservative
-                    loan-to-value ratios and rigorous borrower qualification
-                    standards throughout.
+                    WCG specializes in the field of private and alternative
+                    lending, with a strong emphasis on real estate-backed
+                    transactions. To ensure a continuous stream of investment
+                    opportunities for its funds, WCG has developed a
+                    comprehensive lending and loan servicing platform.
                   </p>
                   <p>
-                    Our vertically integrated platform encompasses origination,
-                    underwriting, servicing, and asset management — providing
-                    complete control over every stage of the loan lifecycle and
-                    enabling institutional-quality operational execution.
+                    The investment strategy revolves around seeking attractive
+                    risk-adjusted returns by focusing on a diverse range of real
+                    estate-related debt vehicles — primarily investing in senior
+                    and private loans secured by both residential and commercial
+                    investment properties. By carefully selecting and
+                    underwriting these loans, WCG generates favorable returns
+                    while diligently managing the associated risks.
                   </p>
                 </div>
               </div>

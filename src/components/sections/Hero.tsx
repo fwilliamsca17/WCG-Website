@@ -44,8 +44,10 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-body-lg text-charcoal-300 max-w-2xl mb-10 leading-relaxed"
           >
-            {SITE_CONFIG.description} Over $170M deployed across 400+
-            transactions with zero months of principal loss.
+            Delivering stable, consistent income to investors through
+            disciplined private lending secured by real estate. Over $170M
+            deployed across 400+ transactions with zero months of principal
+            loss.
           </motion.p>
 
           <motion.div
