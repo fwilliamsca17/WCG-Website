@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
-import { SITE_CONFIG } from "@/lib/constants";
 
 export default function Hero() {
   return (

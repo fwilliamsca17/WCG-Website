@@ -23,7 +23,8 @@ export const SITE_CONFIG = {
 
 export const NAV_ITEMS = [
   { label: "About", href: "/about" },
-  { label: "Investment Strategy", href: "/strategy" },
+  { label: "Investors", href: "/investors" },
+  { label: "Strategy", href: "/strategy" },
   { label: "Track Record", href: "/track-record" },
   { label: "Team", href: "/team" },
   { label: "Contact", href: "/contact" },
