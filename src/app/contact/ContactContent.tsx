@@ -303,7 +303,7 @@ export default function ContactContent() {
                       </div>
                       <div>
                         <p className="font-medium text-charcoal-800 text-body-sm">
-                          Investor Relations
+                          Email
                         </p>
                         <a
                           href={`mailto:${SITE_CONFIG.contact.email}`}
@@ -357,7 +357,7 @@ export default function ContactContent() {
                       className="text-charcoal-400 mx-auto mb-2"
                     />
                     <p className="text-charcoal-500 text-body-sm">
-                      Beverly Hills, California
+                      West Covina, California
                     </p>
                   </div>
                 </div>

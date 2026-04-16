@@ -9,12 +9,11 @@ export const SITE_CONFIG = {
   contact: {
     phone: "(626) 796-1680",
     phoneDirect: "(213) 308-6687",
-    email: "investors@williamscapitalgroup.com",
-    emailGeneral: "info@williamscapitalgroup.com",
-    address: "439 N Canon Dr, Penthouse",
-    city: "Beverly Hills",
+    email: "Francisco@wcapitalgroupllc.com",
+    address: "100 N Citrus St, Suite 530",
+    city: "West Covina",
     state: "CA",
-    zip: "90210",
+    zip: "91791",
   },
   social: {
     linkedin: "https://www.linkedin.com/company/williams-capital-advisors",

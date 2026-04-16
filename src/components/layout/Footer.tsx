@@ -29,7 +29,7 @@ export default function Footer() {
               real estate secured lending for accredited investors.
             </p>
             <p className="text-charcoal-500 text-body-sm">
-              Beverly Hills, California
+              West Covina, California
             </p>
           </div>
 
