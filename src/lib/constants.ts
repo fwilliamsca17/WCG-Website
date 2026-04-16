@@ -104,4 +104,11 @@ export const TEAM_MEMBERS = [
     image: "/team/francisco-williams.jpg",
     linkedin: "https://www.linkedin.com/in/francisco-williams-ccim",
   },
+  {
+    name: "Frank Williams",
+    title: "Chief Investment Officer",
+    bio: "Frank serves as Chief Investment Officer of Williams Capital Group, bringing decades of experience in real estate finance and investment management. He is responsible for portfolio strategy, risk oversight, and capital allocation decisions across the fund's lending activities. Frank's disciplined approach to credit analysis and collateral evaluation has been instrumental in maintaining WCG's track record of zero months of principal loss.",
+    image: "/team/frank-williams.jpg",
+    linkedin: "",
+  },
 ];
