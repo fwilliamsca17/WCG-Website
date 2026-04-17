@@ -231,6 +231,39 @@ export default function ContactContent() {
                         />
                       </div>
 
+                      <div className="flex items-start gap-3 bg-ivory rounded-lg p-4 border border-charcoal-100">
+                        <input
+                          type="checkbox"
+                          name="consent"
+                          required
+                          id="consent"
+                          className="mt-1 h-4 w-4 rounded border-charcoal-300 text-forest-600 focus:ring-forest-500"
+                        />
+                        <label
+                          htmlFor="consent"
+                          className="text-charcoal-600 text-xs leading-relaxed"
+                        >
+                          I acknowledge that this inquiry is informational
+                          only, does not create an investment relationship,
+                          and that I have reviewed WCG&apos;s{" "}
+                          <a
+                            href="/privacy"
+                            className="text-forest-700 underline hover:text-forest-800"
+                          >
+                            Privacy Policy
+                          </a>{" "}
+                          and{" "}
+                          <a
+                            href="/disclosures"
+                            className="text-forest-700 underline hover:text-forest-800"
+                          >
+                            Important Disclosures
+                          </a>
+                          . I consent to Williams Capital Group contacting me
+                          regarding my inquiry.
+                        </label>
+                      </div>
+
                       <Button
                         type="submit"
                         variant="primary"
@@ -247,6 +280,13 @@ export default function ContactContent() {
                           </span>
                         )}
                       </Button>
+
+                      <p className="text-charcoal-400 text-xs leading-relaxed">
+                        Submission of this form does not constitute an offer,
+                        solicitation, or investment agreement. Any offer of
+                        securities will be made only through definitive
+                        offering documents to qualified accredited investors.
+                      </p>
                     </form>
                   </>
                 )}

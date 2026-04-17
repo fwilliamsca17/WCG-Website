@@ -29,7 +29,7 @@ export default function InvestmentHighlights() {
           <SectionHeading
             label="Why WCG"
             title="A Disciplined Approach to Private Lending"
-            subtitle="Our vertically integrated platform combines rigorous underwriting with hands-on asset management to deliver consistent, risk-adjusted returns for our investors."
+            subtitle="Our vertically integrated platform combines rigorous underwriting with hands-on asset management, seeking consistent, risk-adjusted outcomes for our investors."
           />
         </FadeIn>
 

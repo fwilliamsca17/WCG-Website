@@ -8,60 +8,33 @@ import { CheckCircle2 } from "lucide-react";
 const HEADLINE_STATS = [
   {
     value: "$170M+",
-    label: "Total Capital Deployed",
-    detail: "Since inception across all asset classes",
+    label: "Capital Deployed",
+    detail: "Aggregate, since inception",
   },
   {
     value: "400+",
     label: "Transactions Funded",
-    detail: "Residential, multifamily, and commercial",
+    detail: "Residential, multifamily, commercial",
   },
   {
     value: "11+",
-    label: "Year Track Record",
-    detail: "Consistent performance through market cycles",
+    label: "Years in Operation",
+    detail: "Disciplined underwriting approach",
   },
   {
-    value: "0",
-    label: "Months of Principal Loss",
-    detail: "Capital preservation at its core",
+    value: "$0",
+    label: "Reported Principal Loss",
+    detail: "Since inception",
   },
 ];
 
 const PORTFOLIO_METRICS = [
-  { label: "Weighted Average LTV", value: "~62%" },
-  { label: "Average Loan Size", value: "$425K" },
-  { label: "Average Loan Term", value: "12 Months" },
+  { label: "Target LTV Range", value: "Typically 55–70%" },
+  { label: "Typical Loan Size", value: "See Offering Docs" },
+  { label: "Typical Loan Term", value: "6–36 Months" },
   { label: "Primary Collateral", value: "California RE" },
   { label: "Lien Position", value: "Senior & Second" },
-  { label: "Distribution Frequency", value: "Monthly" },
-];
-
-const MILESTONES = [
-  {
-    year: "2013–2015",
-    title: "Foundation & Early Deployment",
-    description:
-      "Established the fund with a disciplined approach to residential bridge lending in Southern California. Built proprietary origination channels and underwriting infrastructure.",
-  },
-  {
-    year: "2016–2018",
-    title: "Expansion & Diversification",
-    description:
-      "Expanded lending into multifamily and commercial asset classes. Crossed $50M in cumulative capital deployed with zero principal losses.",
-  },
-  {
-    year: "2019–2021",
-    title: "Market Resilience",
-    description:
-      "Navigated the COVID-19 economic disruption without a single month of principal loss — a testament to conservative underwriting and proactive asset management.",
-  },
-  {
-    year: "2022–Present",
-    title: "Institutional Growth",
-    description:
-      "Surpassed $170M in cumulative deployments and 400+ transactions. Enhanced operational capabilities with expanded in-house servicing and asset management infrastructure.",
-  },
+  { label: "Geography", value: "California Focus" },
 ];
 
 export default function TrackRecordContent() {
@@ -80,8 +53,10 @@ export default function TrackRecordContent() {
               Performance Built on Discipline
             </h1>
             <p className="text-body-lg text-charcoal-300 max-w-2xl leading-relaxed">
-              Over a decade of consistent capital deployment with an unwavering
-              focus on downside protection. Our numbers tell the story.
+              More than a decade of disciplined capital deployment with a
+              focus on downside protection and capital preservation. Historical
+              figures below reflect aggregate firm activity since inception and
+              are not a guarantee of future results.
             </p>
           </FadeIn>
         </div>
@@ -106,6 +81,14 @@ export default function TrackRecordContent() {
                 </FadeIn>
               ))}
             </div>
+            <p className="text-center text-charcoal-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
+              Aggregate, unaudited firm figures. Past performance is not
+              indicative of future results. See{" "}
+              <a href="/disclosures" className="underline hover:text-charcoal-600">
+                important disclosures
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -123,22 +106,23 @@ export default function TrackRecordContent() {
                 />
                 <div className="mt-8 space-y-6 text-charcoal-600 text-body leading-relaxed">
                   <p>
-                    Our portfolio is constructed with a singular focus: protecting
-                    investor capital. Every metric reflects our commitment to
-                    conservative lending practices and prudent risk management.
+                    Our portfolio is constructed with a singular focus:
+                    protecting investor capital. Every parameter reflects a
+                    commitment to conservative lending practices and active
+                    risk management.
                   </p>
                   <p>
-                    By maintaining low loan-to-value ratios, short durations, and
-                    rigorous borrower qualification standards, we&apos;ve built a
-                    track record that speaks for itself — 11+ years of consistent
-                    performance without a single month of principal loss.
+                    By maintaining conservative loan-to-value targets, short
+                    durations, and rigorous borrower qualification standards,
+                    WCG has operated for more than a decade with no reported
+                    month of principal loss since inception.
                   </p>
                   <ul className="space-y-3 mt-6">
                     {[
-                      "No month of principal loss since inception",
-                      "Conservative LTV ratios across all asset classes",
-                      "Diversified across 400+ individual transactions",
-                      "Navigated 2020 market disruption without loss",
+                      "No reported month of principal loss since inception*",
+                      "Conservative LTV targets across all asset classes",
+                      "Diversified across 400+ individual transactions*",
+                      "Operated through the 2020 market disruption",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3">
                         <CheckCircle2
@@ -149,6 +133,10 @@ export default function TrackRecordContent() {
                       </li>
                     ))}
                   </ul>
+                  <p className="text-charcoal-400 text-xs mt-6 leading-relaxed">
+                    *Aggregate, unaudited firm figures since inception. Past
+                    performance is not indicative of future results.
+                  </p>
                 </div>
               </div>
             </FadeIn>
@@ -179,42 +167,7 @@ export default function TrackRecordContent() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="section-padding-y bg-white">
-        <div className="max-w-7xl mx-auto section-padding">
-          <FadeIn>
-            <SectionHeading
-              label="Milestones"
-              title="A Decade of Disciplined Growth"
-            />
-          </FadeIn>
-
-          <div className="mt-16 space-y-8 max-w-3xl mx-auto">
-            {MILESTONES.map((milestone, i) => (
-              <FadeIn key={milestone.year} delay={i * 0.1}>
-                <div className="flex gap-6 md:gap-10">
-                  <div className="shrink-0 w-28 md:w-36">
-                    <span className="label-text text-bronze-600">
-                      {milestone.year}
-                    </span>
-                  </div>
-                  <div className="pb-8 border-l-2 border-forest-200 pl-6 md:pl-10 relative">
-                    <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-forest-600 border-4 border-white" />
-                    <h3 className="font-serif text-heading-sm font-semibold text-charcoal-950 mb-2">
-                      {milestone.title}
-                    </h3>
-                    <p className="text-charcoal-600 text-body-sm leading-relaxed">
-                      {milestone.description}
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Disclaimer + CTA */}
+      {/* CTA */}
       <section className="section-padding-y bg-cream">
         <div className="max-w-3xl mx-auto section-padding text-center">
           <FadeIn>
@@ -222,17 +175,25 @@ export default function TrackRecordContent() {
               See the Full Picture
             </h2>
             <p className="text-body-lg text-charcoal-600 mb-8">
-              Request our detailed investor package for comprehensive performance
-              data, fund terms, and subscription information.
+              Detailed historical activity data, loan-level portfolio
+              information, and offering terms are made available to qualified
+              accredited investors through our offering documents.
             </p>
             <Button href="/contact" variant="primary" size="lg">
-              Request Performance Data
+              Request Investor Information
             </Button>
-            <p className="text-charcoal-400 text-xs mt-8 max-w-xl mx-auto">
-              Past performance is not indicative of future results. All
-              investments carry risk, including the potential loss of principal.
-              Performance data available to qualified, accredited investors upon
-              request.
+            <p className="text-charcoal-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
+              This page is informational only and does not constitute an offer
+              to sell or a solicitation of an offer to buy any security. Any
+              offer will be made only through definitive offering documents.
+              Historical figures are aggregate, unaudited, and reflect firm
+              activity since inception. Past performance is not indicative of
+              future results. All investments involve risk, including the
+              potential loss of principal. See{" "}
+              <a href="/disclosures" className="underline hover:text-charcoal-600">
+                important disclosures
+              </a>
+              .
             </p>
           </FadeIn>
         </div>

@@ -4,12 +4,12 @@ import AboutContent from "./AboutContent";
 export const metadata: Metadata = {
   title: "About Williams Capital Group — Private Debt Fund",
   description:
-    "Williams Capital Group LLC is a California-based private debt fund dedicated to delivering stable income to investors while prioritizing capital preservation. Over $170M deployed across 400+ transactions with zero months of principal loss.",
+    "Williams Capital Group LLC is a California-based private lending firm focused on real estate-secured transactions, with a capital preservation orientation and more than a decade of disciplined underwriting.",
   alternates: { canonical: "https://wcapitalgroupllc.com/about" },
   openGraph: {
     title: "About Williams Capital Group — Private Debt Fund",
     description:
-      "California private debt fund with 11+ year track record. Specializing in real estate-backed lending with a focus on capital preservation and consistent investor income.",
+      "California private lending firm with 11+ years of disciplined underwriting. Focused on real estate-secured transactions and capital preservation.",
     url: "https://wcapitalgroupllc.com/about",
   },
 };

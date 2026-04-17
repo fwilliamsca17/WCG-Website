@@ -14,53 +14,53 @@ import {
 } from "lucide-react";
 
 const FUND_TERMS = [
-  { label: "Fund Structure", value: "Private Debt Fund (LLC)" },
+  { label: "Structure", value: "Private Lending LLC" },
   { label: "Strategy", value: "Senior & Second-Lien RE Secured Lending" },
   { label: "Collateral Types", value: "Residential, Multifamily, Commercial" },
   { label: "Lien Position", value: "Senior & Second Lien" },
-  { label: "Target LTV", value: "55–70% (Weighted Average)" },
-  { label: "Loan Terms", value: "6–36 Months" },
-  { label: "Geography", value: "California" },
-  { label: "Distributions", value: "Monthly" },
+  { label: "Target LTV Range", value: "Typically 55–70%" },
+  { label: "Typical Loan Terms", value: "6–36 Months" },
+  { label: "Geography", value: "California Focus" },
+  { label: "Distribution Objective", value: "Income-Oriented" },
   { label: "Investor Eligibility", value: "Accredited Investors" },
-  { label: "Minimum Investment", value: "Contact for Details" },
+  { label: "Minimum Investment", value: "See Offering Documents" },
 ];
 
 const INVESTMENT_PHILOSOPHY = [
   {
     icon: Shield,
-    title: "Capital Preservation First",
+    title: "Capital Preservation Focus",
     description:
-      "Every lending decision begins with downside analysis. Conservative loan-to-value ratios and rigorous underwriting ensure a healthy margin of safety protects investor capital in every transaction.",
+      "Every lending decision begins with downside analysis. Conservative loan-to-value ratios and rigorous underwriting are designed to maintain a meaningful margin of safety on each transaction.",
   },
   {
     icon: BarChart3,
-    title: "Consistent Income Generation",
+    title: "Income-Oriented Strategy",
     description:
-      "Our fund is structured to deliver a stable and consistent income stream through monthly distributions, backed by a diversified portfolio of performing real estate-secured loans.",
+      "WCG's strategy seeks to generate a steady income stream from a diversified portfolio of real estate-secured loans. Distribution amounts and frequency are subject to the terms of the applicable offering and are not guaranteed.",
   },
   {
     icon: TrendingUp,
-    title: "Attractive Risk-Adjusted Returns",
+    title: "Seeking Risk-Adjusted Outcomes",
     description:
-      "By focusing on senior and private loans secured by real estate, WCG seeks to generate favorable returns while diligently managing risk — providing a compelling alternative to traditional fixed-income.",
+      "By focusing on senior and private loans secured by real estate, WCG seeks favorable risk-adjusted outcomes while actively managing credit and collateral risk. There is no assurance investment objectives will be achieved.",
   },
   {
     icon: Clock,
-    title: "Short Duration, Low Correlation",
+    title: "Short Duration, Real Asset Collateral",
     description:
-      "Short-term loan durations reduce interest rate sensitivity, while real estate collateral provides insulation from public market volatility and broader economic cycles.",
+      "Short-term loan durations may reduce interest-rate sensitivity, and real estate collateral provides a tangible asset base that is less directly correlated with public market movements.",
   },
 ];
 
 const WHY_INVEST = [
-  "Over $170M deployed across 400+ transactions",
-  "11+ year track record with zero months of principal loss",
-  "Monthly income distributions to investors",
-  "Senior secured positions with conservative LTV ratios",
+  "Over $170M deployed across 400+ transactions since inception*",
+  "More than a decade of disciplined underwriting",
+  "Income-oriented strategy with real estate-secured loans",
+  "Senior and second-lien positions with conservative LTV targets",
   "Vertically integrated origination, underwriting, and servicing",
   "Comprehensive lending and loan servicing platform",
-  "Diversified across residential, multifamily, and commercial assets",
+  "Diversified across residential, multifamily, and commercial collateral",
   "Disciplined risk management and portfolio construction",
 ];
 
@@ -107,10 +107,19 @@ export default function InvestorsContent() {
               Attractive Income With a Significant Margin of Safety
             </h1>
             <p className="text-body-lg text-charcoal-300 max-w-2xl leading-relaxed">
-              Williams Capital Group offers accredited investors access to a
-              private debt fund focused on delivering consistent, risk-adjusted
-              returns through disciplined real estate secured lending.
+              Williams Capital Group operates a private lending strategy for
+              accredited investors — focused on real estate-secured loans and
+              disciplined underwriting with a capital preservation orientation.
             </p>
+            <div className="mt-8 bg-bronze-900/20 border border-bronze-600/30 rounded-lg p-5 max-w-2xl">
+              <p className="text-bronze-200 text-body-sm leading-relaxed">
+                <strong className="text-bronze-100">Informational only.</strong>{" "}
+                This page is not an offer to sell or a solicitation of an offer
+                to buy any security. Any offer will be made solely through
+                definitive offering documents to qualified accredited
+                investors.
+              </p>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -121,10 +130,10 @@ export default function InvestorsContent() {
           <div className="glass-card shadow-xl p-8 md:p-12">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { value: "$170M+", label: "Capital Deployed", detail: "Since inception" },
-                { value: "400+", label: "Transactions", detail: "Funded to date" },
-                { value: "11+", label: "Year Track Record", detail: "Consistent performance" },
-                { value: "0", label: "Principal Loss", detail: "Months since inception" },
+                { value: "$170M+", label: "Capital Deployed", detail: "Aggregate, since inception*" },
+                { value: "400+", label: "Transactions", detail: "Funded since inception*" },
+                { value: "11+", label: "Years in Operation", detail: "Disciplined underwriting" },
+                { value: "$0", label: "Reported Principal Loss", detail: "Since inception*" },
               ].map((stat, i) => (
                 <FadeIn key={stat.label} delay={i * 0.1}>
                   <div className="text-center">
@@ -139,6 +148,14 @@ export default function InvestorsContent() {
                 </FadeIn>
               ))}
             </div>
+            <p className="text-center text-charcoal-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
+              *Aggregate, unaudited firm figures since inception. Past
+              performance is not indicative of future results. See{" "}
+              <a href="/disclosures" className="underline hover:text-charcoal-600">
+                important disclosures
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -156,23 +173,22 @@ export default function InvestorsContent() {
                 />
                 <div className="mt-8 space-y-6 text-charcoal-600 text-body leading-relaxed">
                   <p>
-                    WCG&apos;s investment strategy revolves around seeking attractive
-                    risk-adjusted returns by focusing on a diverse range of real
-                    estate-related debt vehicles. This approach involves primarily
-                    investing in senior and private loans that are secured by both
-                    residential and commercial investment properties.
+                    WCG&apos;s investment strategy focuses on seeking
+                    risk-adjusted outcomes through a diverse range of real
+                    estate-related debt vehicles — primarily senior and private
+                    loans secured by residential and commercial investment
+                    properties.
                   </p>
                   <p>
-                    By carefully selecting and underwriting these loans, WCG aims
-                    to generate favorable returns while diligently managing the
-                    associated risks. The firm&apos;s focus on capital preservation,
-                    coupled with its dedication to maintaining a healthy margin of
-                    safety, reflects its commitment to safeguarding the interests
-                    of its investors.
+                    By carefully selecting and underwriting these loans, WCG
+                    seeks to generate favorable outcomes while actively
+                    managing credit, collateral, and market risk. The firm&apos;s
+                    focus on capital preservation is reflected in conservative
+                    loan-to-value targets and a disciplined margin of safety.
                   </p>
                   <p>
-                    To ensure a continuous stream of investment opportunities, WCG
-                    has developed a comprehensive lending and loan servicing
+                    To support a continuous flow of investment opportunities,
+                    WCG operates a comprehensive lending and loan servicing
                     platform that supports in-house origination, underwriting,
                     and asset management.
                   </p>
@@ -252,9 +268,10 @@ export default function InvestorsContent() {
                   Built for Income &amp; Preservation
                 </h2>
                 <p className="text-charcoal-400 text-body leading-relaxed">
-                  WCG is dedicated to fulfilling its mission of delivering a
-                  stable and consistent income stream to investors while
-                  prioritizing capital preservation above all else.
+                  WCG&apos;s mission is to pursue consistent income for
+                  investors while prioritizing capital preservation — reflected
+                  in conservative lending parameters and active portfolio
+                  management.
                 </p>
               </div>
             </FadeIn>
@@ -397,11 +414,18 @@ export default function InvestorsContent() {
             <Button href="/contact" variant="primary" size="lg">
               Contact Us
             </Button>
-            <p className="text-charcoal-400 text-xs mt-8 max-w-xl mx-auto">
+            <p className="text-charcoal-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
+              This website is for informational purposes only and does not
+              constitute an offer to sell or a solicitation of an offer to buy
+              any security. Any offer will be made only through definitive
+              offering documents delivered to qualified accredited investors.
               Past performance is not indicative of future results. All
-              investments carry risk, including the potential loss of principal.
-              Securities offered through applicable exemptions. Available to
-              accredited investors only.
+              investments involve risk, including the potential loss of
+              principal. See{" "}
+              <a href="/disclosures" className="underline hover:text-charcoal-600">
+                important disclosures
+              </a>
+              .
             </p>
           </FadeIn>
         </div>

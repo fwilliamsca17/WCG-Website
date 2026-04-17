@@ -43,10 +43,10 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-body-lg text-charcoal-300 max-w-2xl mb-10 leading-relaxed"
           >
-            Delivering stable, consistent income to investors through
-            disciplined private lending secured by real estate. Over $170M
-            deployed across 400+ transactions with zero months of principal
-            loss.
+            A California-based private lending firm focused on short-term
+            real estate-secured transactions, seeking to deliver consistent
+            income through disciplined underwriting and a conservative margin
+            of safety.
           </motion.p>
 
           <motion.div
@@ -73,13 +73,13 @@ export default function Hero() {
         >
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 w-72">
             <p className="text-bronze-400 text-label uppercase tracking-widest mb-3">
-              Performance
+              Firm Snapshot
             </p>
             <p className="font-serif text-5xl font-bold text-white mb-2">
-              11 <span className="text-2xl text-charcoal-400">Years</span>
+              11+ <span className="text-2xl text-charcoal-400">Years</span>
             </p>
             <p className="text-charcoal-400 text-body-sm">
-              Consistent returns with zero months of principal loss
+              Disciplined underwriting since inception
             </p>
             <div className="mt-6 pt-6 border-t border-white/10">
               <div className="flex justify-between items-center">
@@ -87,6 +87,10 @@ export default function Hero() {
                 <span className="font-serif text-white font-bold text-xl">$170M+</span>
               </div>
             </div>
+            <p className="text-charcoal-500 text-[10px] mt-4 leading-relaxed">
+              Historical figures. Past performance is not indicative of future
+              results.
+            </p>
           </div>
         </motion.div>
       </div>

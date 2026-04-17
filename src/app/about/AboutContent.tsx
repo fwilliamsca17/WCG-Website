@@ -10,7 +10,7 @@ const VALUES = [
     icon: Shield,
     title: "Capital Preservation First",
     description:
-      "Every lending decision begins with downside analysis. We ask 'what can go wrong' before 'what can we earn.' This philosophy has produced 11 years of consistent performance without a single month of principal loss.",
+      "Every lending decision begins with downside analysis. We ask 'what can go wrong' before 'what can we earn.' This philosophy shapes our conservative approach to loan-to-value, collateral, and borrower selection.",
   },
   {
     icon: Target,
@@ -48,9 +48,9 @@ export default function AboutContent() {
               Eleven Years of Disciplined Capital Deployment
             </h1>
             <p className="text-body-lg text-charcoal-300 max-w-2xl leading-relaxed">
-              Founded on the principle that consistent returns are built through
-              conservative underwriting and rigorous risk management — not
-              aggressive yield-chasing.
+              Founded on the principle that sustainable outcomes are built
+              through conservative underwriting and rigorous risk management —
+              not aggressive yield-chasing.
             </p>
           </FadeIn>
         </div>
@@ -108,8 +108,8 @@ export default function AboutContent() {
                     ["Collateral", "Residential, Multifamily, Commercial"],
                     ["Geography", "California"],
                     ["Investor Type", "Accredited Investors"],
-                    ["Track Record", "11+ Years"],
-                    ["Principal Loss", "Zero Months"],
+                    ["Time in Operation", "11+ Years"],
+                    ["Reported Principal Loss", "$0 Since Inception*"],
                   ].map(([label, value]) => (
                     <div
                       key={label}
@@ -124,6 +124,17 @@ export default function AboutContent() {
                     </div>
                   ))}
                 </div>
+                <p className="text-charcoal-400 text-xs mt-6 leading-relaxed">
+                  *Aggregate, unaudited firm figures since inception. Past
+                  performance is not indicative of future results. See{" "}
+                  <a
+                    href="/disclosures"
+                    className="underline hover:text-charcoal-600"
+                  >
+                    important disclosures
+                  </a>
+                  .
+                </p>
               </div>
             </FadeIn>
           </div>
@@ -137,7 +148,7 @@ export default function AboutContent() {
             <SectionHeading
               label="Our Philosophy"
               title="Principles That Guide Every Decision"
-              subtitle="We believe that exceptional long-term performance comes from discipline, transparency, and an unwavering commitment to protecting investor capital."
+              subtitle="We believe that durable outcomes are built on discipline, transparency, and a consistent focus on protecting investor capital."
             />
           </FadeIn>
 

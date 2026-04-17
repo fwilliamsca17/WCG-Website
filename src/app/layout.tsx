@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${SITE_CONFIG.name} — ${SITE_CONFIG.tagline}`,
     description:
-      "California private debt fund delivering stable income to accredited investors through disciplined real estate secured lending. $170M+ deployed, 400+ transactions, zero months of principal loss.",
+      "California private lending firm focused on real estate-secured transactions for accredited investors. Disciplined underwriting and a capital preservation orientation. Informational only; not an offer of securities.",
     url: BASE_URL,
     siteName: SITE_CONFIG.name,
     type: "website",
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE_CONFIG.name} — ${SITE_CONFIG.tagline}`,
     description:
-      "California private debt fund. $170M+ deployed across 400+ transactions with zero months of principal loss. Accredited investors only.",
+      "California private lending firm — real estate-secured transactions for accredited investors. Informational only.",
     images: [`${BASE_URL}/og-image.png`],
   },
   robots: {

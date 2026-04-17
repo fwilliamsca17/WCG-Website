@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   legalName: "Williams Capital Group, LLC",
   tagline: "Capital Preservation Through Disciplined Lending",
   description:
-    "Williams Capital Group LLC is dedicated to delivering a stable and consistent income stream to investors while prioritizing capital preservation, specializing in private and alternative lending with a focus on real estate-backed transactions.",
+    "Williams Capital Group LLC is a California-based private lending firm focused on real estate-secured transactions, seeking to deliver consistent income to investors while emphasizing capital preservation and a conservative margin of safety.",
   url: "https://wcapitalgroupllc.com",
   contact: {
     phone: "(626) 796-1680",
@@ -33,8 +33,8 @@ export const NAV_ITEMS = [
 export const STATS = [
   { value: "$170M+", label: "Capital Deployed" },
   { value: "400+", label: "Transactions Funded" },
-  { value: "11", label: "Year Track Record" },
-  { value: "0", label: "Months of Principal Loss" },
+  { value: "11+", label: "Years in Operation" },
+  { value: "$0", label: "Reported Principal Loss" },
 ];
 
 export const FUND_HIGHLIGHTS = [
@@ -51,15 +51,15 @@ export const FUND_HIGHLIGHTS = [
     icon: "Layers",
   },
   {
-    title: "Capital Preservation",
+    title: "Capital Preservation Focus",
     description:
-      "Eleven years of consistent performance without a single month of principal loss. Our track record speaks to our disciplined approach.",
+      "More than a decade of disciplined underwriting and active asset management. Historical figures reflect our conservative approach and are not a guarantee of future results.",
     icon: "Lock",
   },
   {
-    title: "Non-Correlated Returns",
+    title: "Real Asset Collateral",
     description:
-      "Fixed-income returns backed by real estate collateral, providing insulation from public market volatility and economic cycles.",
+      "Loans secured by real estate, seeking to provide collateral protection that is less directly correlated with public market volatility.",
     icon: "TrendingUp",
   },
   {
@@ -96,6 +96,17 @@ export const ASSET_CLASSES = [
     termRange: "12–24 months",
   },
 ];
+
+export const DISCLAIMERS = {
+  short:
+    "Past performance is not indicative of future results. All investments involve risk, including the possible loss of principal.",
+  medium:
+    "The information on this website is provided for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any security. Any such offer will be made only through definitive offering documents provided to qualified, accredited investors. Past performance is not indicative of future results. All investments involve risk, including the potential loss of principal.",
+  performance:
+    "Historical performance figures reflect aggregate fund activity since inception and have not been independently audited except as specifically disclosed in offering documents. Individual investor results may vary. Past performance is not indicative of future results.",
+  forwardLooking:
+    "This website contains forward-looking statements regarding strategy, objectives, and expectations. Forward-looking statements are based on current beliefs and are subject to risks and uncertainties that could cause actual results to differ materially.",
+};
 
 export const TEAM_MEMBERS = [
   {

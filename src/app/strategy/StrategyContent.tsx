@@ -64,7 +64,7 @@ const PROCESS_STEPS = [
     step: "02",
     title: "Underwriting & Due Diligence",
     description:
-      "Comprehensive analysis including independent appraisals, title review, environmental screening, and detailed borrower financial assessment. Conservative LTV ensures adequate collateral cushion.",
+      "Comprehensive analysis including independent appraisals, title review, environmental screening, and detailed borrower financial assessment. Conservative LTV targets are designed to provide a meaningful collateral cushion.",
   },
   {
     step: "03",
@@ -233,7 +233,7 @@ export default function StrategyContent() {
             <SectionHeading
               label="Our Process"
               title="From Origination to Exit"
-              subtitle="A rigorous, four-stage process ensures every loan meets our institutional-quality standards from day one through successful resolution."
+              subtitle="A rigorous, four-stage process is designed to evaluate every loan against institutional-quality standards from origination through resolution."
               dark
             />
           </FadeIn>

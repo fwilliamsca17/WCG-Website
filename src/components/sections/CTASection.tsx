@@ -13,9 +13,9 @@ export default function CTASection() {
             Access Institutional-Quality Private Debt
           </h2>
           <p className="text-body-lg text-charcoal-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Learn how Williams Capital Group can deliver consistent,
-            risk-adjusted fixed-income returns backed by California real estate.
-            Request our investor materials today.
+            Learn how Williams Capital Group seeks to deliver consistent,
+            risk-adjusted outcomes through California real estate-secured
+            lending. Request informational materials.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/contact" variant="primary" size="lg">

@@ -93,12 +93,23 @@ export default function Footer() {
             <h4 className="font-serif font-semibold text-heading-sm mb-6">
               Important Information
             </h4>
+            <p className="text-charcoal-500 text-xs leading-relaxed mb-4">
+              This website is for informational purposes only and does not
+              constitute an offer to sell or a solicitation of an offer to buy
+              any security. Any offer will be made only through definitive
+              offering documents delivered to qualified accredited investors.
+            </p>
             <p className="text-charcoal-500 text-xs leading-relaxed">
-              Williams Capital Group, LLC is a private debt fund available
-              exclusively to accredited investors. Past performance is not
-              indicative of future results. All investments carry risk, including
-              the potential loss of principal. Securities offered through
-              applicable exemptions.
+              Past performance is not indicative of future results. All
+              investments involve risk, including the potential loss of
+              principal. See our{" "}
+              <Link
+                href="/disclosures"
+                className="text-bronze-400 hover:text-bronze-300 underline transition-colors"
+              >
+                important disclosures
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -112,6 +123,12 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-6 text-body-sm">
             <Link
+              href="/disclosures"
+              className="text-charcoal-500 hover:text-white transition-colors"
+            >
+              Disclosures
+            </Link>
+            <Link
               href="/privacy"
               className="text-charcoal-500 hover:text-white transition-colors"
             >
@@ -121,7 +138,7 @@ export default function Footer() {
               href="/terms"
               className="text-charcoal-500 hover:text-white transition-colors"
             >
-              Terms of Service
+              Terms of Use
             </Link>
           </div>
         </div>
