@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "accredited investor fund",
     "Francisco Williams CCIM",
     "Frank Williams",
-    "Capital Direct Funding",
+    "private credit",
     "fix and flip loans",
     "ground up construction loans",
   ],

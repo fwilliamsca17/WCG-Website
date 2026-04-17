@@ -382,24 +382,26 @@ export default function InvestorsContent() {
         </div>
       </section>
 
-      {/* Licensing */}
+      {/* Reg D banner */}
       <section className="bg-charcoal-950 py-12">
         <div className="max-w-5xl mx-auto section-padding">
           <FadeIn>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div>
                 <p className="label-text text-bronze-400 mb-3">
-                  Origination &amp; Licensing
+                  Regulation D Rule 506(c)
                 </p>
                 <p className="text-charcoal-300 text-body-sm leading-relaxed max-w-2xl">
-                  Loans are originated through{" "}
-                  <strong className="text-white">
-                    Capital Direct Funding, Inc.
-                  </strong>{" "}
-                  (CA DRE #01885595, NMLS #1159831). Francisco Williams, CCIM
-                  serves as Broker of Record. Securities are offered pursuant
-                  to Rule 506(c) of Regulation D promulgated under the
-                  Securities Act of 1933.
+                  Interests are offered pursuant to Rule 506(c) of Regulation
+                  D under the Securities Act of 1933. Available exclusively
+                  to verified accredited investors. See{" "}
+                  <a
+                    href="/disclosures"
+                    className="text-bronze-400 underline hover:text-bronze-300"
+                  >
+                    important disclosures
+                  </a>
+                  .
                 </p>
               </div>
               <Button href="/contact" variant="primary" size="lg" className="shrink-0">

@@ -103,13 +103,6 @@ export default function Footer() {
               </strong>
               .
             </p>
-            <p className="text-charcoal-500 text-xs leading-relaxed mb-3">
-              Loans originated through{" "}
-              <strong className="text-charcoal-400">
-                Capital Direct Funding, Inc.
-              </strong>{" "}
-              (CA DRE #01885595, NMLS #1159831).
-            </p>
             <p className="text-charcoal-500 text-xs leading-relaxed">
               Past performance is not indicative of future results. All
               investments involve risk, including the potential loss of

@@ -59,7 +59,7 @@ const franciscoWilliamsSchema = {
   familyName: "Williams",
   jobTitle: "Managing Principal",
   description:
-    "Francisco Williams, CCIM is the founding member and Managing Principal of Williams Capital Group LLC, and serves as President and Broker of Record at Capital Direct Funding, Inc. He holds the CCIM designation, is an Associate of the Royal Institute of Chartered Surveyors, and is a licensed California real estate broker.",
+    "Francisco Williams, CCIM is the founding member and Managing Principal of Williams Capital Group LLC. He holds the CCIM designation, is an Associate of the Royal Institute of Chartered Surveyors, and is a licensed California real estate broker.",
   url: `${BASE_URL}/team`,
   image: `${BASE_URL}/team/francisco-williams.png`,
   worksFor: {
@@ -109,7 +109,7 @@ const frankWilliamsSchema = {
   familyName: "Williams",
   jobTitle: "Chief Investment Officer",
   description:
-    "Frank Williams is the Chief Investment Officer of Williams Capital Group LLC and Co-Founder of Capital Direct Funding, Inc. With more than 25 years of experience in the mortgage banking industry, Frank leads investor relations and credit program development.",
+    "Frank Williams is the Chief Investment Officer of Williams Capital Group LLC. With more than 25 years of experience in the mortgage banking industry, Frank leads credit program development and supports investor relationships.",
   url: `${BASE_URL}/team`,
   worksFor: {
     "@type": "Organization",
@@ -175,7 +175,7 @@ const faqSchema = {
       name: "Who manages Williams Capital Group?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Williams Capital Group is led by Francisco Williams, CCIM (Managing Principal and founding member) and Frank Williams (Chief Investment Officer). Francisco holds the CCIM designation and is a licensed California real estate broker (DRE #02030467). Frank brings over 25 years of mortgage banking experience and is the founder of Capital Direct Funding.",
+        text: "Williams Capital Group is led by Francisco Williams, CCIM (Managing Principal and founding member) and Frank Williams (Chief Investment Officer). Francisco holds the CCIM designation and is a licensed California real estate broker. Frank brings over 25 years of mortgage banking experience.",
       },
     },
     {

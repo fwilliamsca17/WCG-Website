@@ -109,7 +109,6 @@ export default function AboutContent() {
                     ["Geography", "California Focus"],
                     ["Investor Type", "Verified Accredited Investors"],
                     ["Exemption", "Rule 506(c) of Regulation D"],
-                    ["Origination", "Capital Direct Funding, Inc."],
                   ].map(([label, value]) => (
                     <div
                       key={label}
@@ -125,8 +124,7 @@ export default function AboutContent() {
                   ))}
                 </div>
                 <p className="text-charcoal-400 text-xs mt-6 leading-relaxed">
-                  Loans originated through Capital Direct Funding, Inc.
-                  (CA DRE #01885595, NMLS #1159831). See{" "}
+                  Informational only. See{" "}
                   <a
                     href="/disclosures"
                     className="underline hover:text-charcoal-600"

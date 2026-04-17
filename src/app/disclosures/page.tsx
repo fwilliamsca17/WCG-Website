@@ -43,18 +43,6 @@ export default function DisclosuresPage() {
         sufficient to satisfy the Rule 506(c) verification requirement.
       </p>
 
-      <h2>Loan Origination &mdash; Capital Direct Funding, Inc.</h2>
-      <p>
-        Real estate-secured loans referenced on this website are originated
-        through{" "}
-        <strong>Capital Direct Funding, Inc.</strong>, a California licensed
-        real estate broker (CA DRE License #01885595, NMLS #1159831). Francisco
-        Williams, CCIM serves as Broker of Record at Capital Direct Funding,
-        Inc. Williams Capital Group, LLC and Capital Direct Funding, Inc. are
-        affiliated entities, which may result in fees, compensation, or other
-        benefits flowing between them. These relationships and any related
-        conflicts of interest are described in applicable offering documents.
-      </p>
 
       <h2>Past Performance</h2>
       <p>
