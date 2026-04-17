@@ -25,13 +25,35 @@ export default function DisclosuresPage() {
         investment.
       </p>
 
-      <h2>Accredited Investor Requirement</h2>
+      <h2>Regulation D Rule 506(c) &mdash; Verified Accredited Investors</h2>
       <p>
-        Participation in any WCG private investment vehicle is limited to
-        &quot;accredited investors&quot; as defined in Rule 501(a) of Regulation
-        D promulgated under the Securities Act of 1933, as amended.
-        Representations concerning accredited-investor status may be subject to
-        verification in accordance with applicable law.
+        Interests in WCG investment vehicles are offered pursuant to{" "}
+        <strong>Rule 506(c) of Regulation D</strong> promulgated under the
+        Securities Act of 1933, as amended. Under Rule 506(c), general
+        solicitation and advertising are permitted; however, all purchasers
+        must be &quot;accredited investors&quot; as defined in Rule 501(a),
+        and WCG (or a qualified third party on WCG&apos;s behalf) must take
+        reasonable steps to <strong>verify</strong> each purchaser&apos;s
+        accredited-investor status before any investment is accepted.
+      </p>
+      <p>
+        Acceptable third-party verifiers generally include licensed certified
+        public accountants, attorneys, registered broker-dealers, and
+        SEC-registered investment advisers. Self-certification alone is not
+        sufficient to satisfy the Rule 506(c) verification requirement.
+      </p>
+
+      <h2>Loan Origination &mdash; Capital Direct Funding, Inc.</h2>
+      <p>
+        Real estate-secured loans referenced on this website are originated
+        through{" "}
+        <strong>Capital Direct Funding, Inc.</strong>, a California licensed
+        real estate broker (CA DRE License #01885595, NMLS #1159831). Francisco
+        Williams, CCIM serves as Broker of Record at Capital Direct Funding,
+        Inc. Williams Capital Group, LLC and Capital Direct Funding, Inc. are
+        affiliated entities, which may result in fees, compensation, or other
+        benefits flowing between them. These relationships and any related
+        conflicts of interest are described in applicable offering documents.
       </p>
 
       <h2>Past Performance</h2>

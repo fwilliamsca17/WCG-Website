@@ -54,14 +54,14 @@ const INVESTMENT_PHILOSOPHY = [
 ];
 
 const WHY_INVEST = [
-  "Over $170M deployed across 400+ transactions since inception*",
-  "More than a decade of disciplined underwriting",
-  "Income-oriented strategy with real estate-secured loans",
+  "More than a decade of disciplined underwriting experience",
+  "Income-oriented strategy backed by real estate collateral",
   "Senior and second-lien positions with conservative LTV targets",
-  "Vertically integrated origination, underwriting, and servicing",
-  "Comprehensive lending and loan servicing platform",
+  "Integrated origination, underwriting, and servicing platform",
   "Diversified across residential, multifamily, and commercial collateral",
   "Disciplined risk management and portfolio construction",
+  "California-focused, local-market expertise",
+  "Transparent reporting to verified accredited investors",
 ];
 
 const PROCESS_STEPS = [
@@ -69,25 +69,25 @@ const PROCESS_STEPS = [
     step: "01",
     title: "Initial Inquiry",
     description:
-      "Contact our team to request investor materials, including the fund overview, terms, and historical performance data. We welcome the opportunity to discuss your investment objectives.",
+      "Contact our team to request investor materials, including the offering overview, terms, and historical activity data. We welcome the opportunity to discuss your investment objectives.",
   },
   {
     step: "02",
-    title: "Accredited Investor Verification",
+    title: "Third-Party Accreditation Verification",
     description:
-      "As a private fund, WCG is available exclusively to accredited investors as defined by the SEC. We will verify your eligibility as part of the onboarding process.",
+      "Because WCG operates under Rule 506(c), accredited-investor status must be verified by a qualified third party (licensed CPA, attorney, registered broker-dealer, or SEC-registered investment adviser) before any offering documents are delivered.",
   },
   {
     step: "03",
-    title: "Review & Due Diligence",
+    title: "Review Offering Documents",
     description:
-      "Review the fund's offering documents, subscription agreement, and operating agreement. Our team is available to answer questions and provide additional materials as needed.",
+      "After verification, review the Private Placement Memorandum, Operating Agreement, and Subscription Documents. Our team is available to answer questions and arrange follow-up diligence.",
   },
   {
     step: "04",
     title: "Subscribe & Fund",
     description:
-      "Complete the subscription documents and fund your investment. Once your capital is deployed, you will receive monthly distribution statements and quarterly portfolio reports.",
+      "Complete the subscription documents and fund your commitment. Distribution amounts, frequency, and investor reporting are described in the offering documents.",
   },
 ];
 
@@ -124,20 +124,25 @@ export default function InvestorsContent() {
         </div>
       </section>
 
-      {/* Headline Stats */}
+      {/* Strategy at a Glance */}
       <section className="relative -mt-8 z-10">
         <div className="max-w-6xl mx-auto section-padding">
           <div className="glass-card shadow-xl p-8 md:p-12">
+            <p className="label-text text-center text-bronze-600 mb-8">
+              Strategy at a Glance
+            </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { value: "$170M+", label: "Capital Deployed", detail: "Aggregate, since inception*" },
-                { value: "400+", label: "Transactions", detail: "Funded since inception*" },
-                { value: "11+", label: "Years in Operation", detail: "Disciplined underwriting" },
-                { value: "$0", label: "Reported Principal Loss", detail: "Since inception*" },
+                { value: "Senior", label: "Lien Positions", detail: "Senior & second-lien secured" },
+                { value: "Short", label: "Duration", detail: "Typically 6–36 month terms" },
+                { value: "Conservative", label: "LTV Targets", detail: "Margin-of-safety focus" },
+                { value: "California", label: "Collateral", detail: "Statewide real estate focus" },
               ].map((stat, i) => (
                 <FadeIn key={stat.label} delay={i * 0.1}>
                   <div className="text-center">
-                    <p className="stat-number">{stat.value}</p>
+                    <p className="font-serif text-heading md:text-heading-lg font-bold text-forest-800">
+                      {stat.value}
+                    </p>
                     <p className="font-semibold text-charcoal-800 text-body-sm mt-2">
                       {stat.label}
                     </p>
@@ -148,14 +153,6 @@ export default function InvestorsContent() {
                 </FadeIn>
               ))}
             </div>
-            <p className="text-center text-charcoal-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
-              *Aggregate, unaudited firm figures since inception. Past
-              performance is not indicative of future results. See{" "}
-              <a href="/disclosures" className="underline hover:text-charcoal-600">
-                important disclosures
-              </a>
-              .
-            </p>
           </div>
         </div>
       </section>
@@ -338,12 +335,17 @@ export default function InvestorsContent() {
                 </div>
                 <div>
                   <h3 className="font-serif text-heading font-semibold text-charcoal-950 mb-1">
-                    Accredited Investor Eligibility
+                    Verified Accredited Investors Only
                   </h3>
-                  <p className="text-charcoal-600 text-body-sm">
-                    WCG&apos;s private debt fund is available exclusively to
-                    accredited investors as defined by the U.S. Securities and
-                    Exchange Commission.
+                  <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                    WCG operates under{" "}
+                    <strong>Rule 506(c) of Regulation D</strong>. Under 506(c),
+                    accredited-investor status must be{" "}
+                    <strong>verified by a qualified third party</strong> —
+                    such as a licensed CPA, attorney, registered broker-dealer,
+                    or SEC-registered investment adviser — before any offering
+                    documents are provided. Self-certification alone is not
+                    sufficient.
                   </p>
                 </div>
               </div>
@@ -382,16 +384,25 @@ export default function InvestorsContent() {
 
       {/* Licensing */}
       <section className="bg-charcoal-950 py-12">
-        <div className="max-w-4xl mx-auto section-padding">
+        <div className="max-w-5xl mx-auto section-padding">
           <FadeIn>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div>
-                <p className="label-text text-bronze-400 mb-2">Licensing</p>
-                <p className="text-charcoal-400 text-body-sm">
-                  California Department of Real Estate — DRE #02030467
+                <p className="label-text text-bronze-400 mb-3">
+                  Origination &amp; Licensing
+                </p>
+                <p className="text-charcoal-300 text-body-sm leading-relaxed max-w-2xl">
+                  Loans are originated through{" "}
+                  <strong className="text-white">
+                    Capital Direct Funding, Inc.
+                  </strong>{" "}
+                  (CA DRE #01885595, NMLS #1159831). Francisco Williams, CCIM
+                  serves as Broker of Record. Securities are offered pursuant
+                  to Rule 506(c) of Regulation D promulgated under the
+                  Securities Act of 1933.
                 </p>
               </div>
-              <Button href="/contact" variant="primary" size="lg">
+              <Button href="/contact" variant="primary" size="lg" className="shrink-0">
                 Request Investor Materials
               </Button>
             </div>

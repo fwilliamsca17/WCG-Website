@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import FadeIn from "@/components/ui/FadeIn";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
@@ -23,8 +24,8 @@ export default function TeamContent() {
             </h1>
             <p className="text-body-lg text-charcoal-300 max-w-2xl leading-relaxed">
               Our team combines deep real estate expertise with disciplined
-              investment management to deliver consistent results for our
-              investors.
+              underwriting — pursuing consistent outcomes for our investors
+              through a conservative, capital preservation-oriented approach.
             </p>
           </FadeIn>
         </div>
@@ -37,30 +38,23 @@ export default function TeamContent() {
             <SectionHeading
               label="Our Team"
               title="Meet the Leadership"
-              subtitle="The people behind Williams Capital Group's decade-plus track record of capital preservation."
+              subtitle="The people leading Williams Capital Group's disciplined, capital preservation-oriented approach to private lending."
             />
           </FadeIn>
 
           <div className="mt-16 max-w-4xl mx-auto">
             {TEAM_MEMBERS.map((member, i) => (
               <FadeIn key={member.name} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl border border-charcoal-100 overflow-hidden">
+                <div className="bg-white rounded-2xl border border-charcoal-100 overflow-hidden mb-8">
                   <div className="grid md:grid-cols-[300px_1fr] gap-0">
-                    {/* Photo placeholder */}
-                    <div className="bg-gradient-to-br from-forest-800 to-forest-950 flex items-center justify-center min-h-[300px] md:min-h-full">
-                      <div className="text-center">
-                        <div className="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4">
-                          <span className="font-serif text-3xl text-white font-bold">
-                            {member.name
-                              .split(" ")
-                              .map((n) => n[0])
-                              .join("")}
-                          </span>
-                        </div>
-                        <p className="text-white/60 text-body-sm">
-                          Photo coming soon
-                        </p>
-                      </div>
+                    <div className="relative bg-gradient-to-br from-forest-800 to-forest-950 min-h-[320px] md:min-h-full">
+                      <Image
+                        src={member.image}
+                        alt={`${member.name}, ${member.title}`}
+                        fill
+                        className="object-cover object-top"
+                        sizes="(max-width: 768px) 100vw, 300px"
+                      />
                     </div>
 
                     {/* Bio */}

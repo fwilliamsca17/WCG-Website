@@ -19,6 +19,18 @@ export const SITE_CONFIG = {
     linkedin: "https://www.linkedin.com/company/williams-capital-advisors",
   },
   web3formsKey: "09f80e34-62a3-4fc0-9773-ff3f8f0683e2",
+  licensing: {
+    // Loans originated through Capital Direct Funding, Inc.
+    originationPartner: "Capital Direct Funding, Inc.",
+    originationPartnerShort: "Capital Direct Funding",
+    cdfDRE: "CA DRE #01885595",
+    cdfNMLS: "NMLS #1159831",
+    // Francisco's personal broker license
+    brokerOfRecord: "Francisco Williams, CCIM — Broker of Record",
+    brokerDRE: "DRE #02030467",
+    // Regulation D exemption
+    regDExemption: "Rule 506(c) of Regulation D",
+  },
 };
 
 export const NAV_ITEMS = [
@@ -31,10 +43,26 @@ export const NAV_ITEMS = [
 ];
 
 export const STATS = [
-  { value: "$170M+", label: "Capital Deployed" },
-  { value: "400+", label: "Transactions Funded" },
-  { value: "11+", label: "Years in Operation" },
-  { value: "$0", label: "Reported Principal Loss" },
+  {
+    value: "Senior",
+    label: "Lien Positions",
+    detail: "Senior & second-lien secured",
+  },
+  {
+    value: "Short",
+    label: "Duration",
+    detail: "Typically 6–36 month terms",
+  },
+  {
+    value: "Conservative",
+    label: "LTV Targets",
+    detail: "Margin of safety focus",
+  },
+  {
+    value: "California",
+    label: "Real Estate",
+    detail: "Statewide collateral focus",
+  },
 ];
 
 export const FUND_HIGHLIGHTS = [
@@ -110,17 +138,17 @@ export const DISCLAIMERS = {
 
 export const TEAM_MEMBERS = [
   {
-    name: "Francisco Williams",
-    title: "CCIM — Managing Principal",
-    bio: "Francisco is the founding member of Williams Capital Group, where he established the firm's core investment philosophy and positioned himself as an accomplished fund manager. Under his leadership, WCG successfully launched its first fund vehicle and structured a strategic partnership with Capital Direct Funding, providing deal origination and loan servicing to institutional investors. As Managing Principal, Francisco oversees all aspects of the firm, with his expertise in capital formation and execution shaping every strategy undertaken by the company. Prior to WCG, Francisco began his career in Mortgage Banking origination at Capital Direct Funding, Inc., before transitioning in 2015 to Commercial Real Estate Brokerage as an Investment Analyst — a move that honed his skills as a fund manager. Over his career, Francisco has advised and completed over $100 million in commercial real estate transactions. He is an active member of CCIM, ULI, and ICSC, and serves on the board of the CCIM Greater Los Angeles Chapter. Francisco holds a B.A. in International Studies from UC Irvine, the CCIM designation, Associate of the Royal Institute of Chartered Surveyors, and is a licensed real estate broker in California (DRE #02030467).",
-    image: "/team/francisco-williams.jpg",
+    name: "Francisco Williams, CCIM",
+    title: "Managing Principal",
+    bio: "Francisco is the founding member of Williams Capital Group, where he established the firm's core investment philosophy and leads all aspects of the firm — capital formation, strategy, and investor relations. Francisco also serves as President and Broker of Record at Capital Direct Funding, Inc., the licensed California real estate broker through which WCG-related loans are originated and serviced (CA DRE #01885595, NMLS #1159831). Francisco began his career in Mortgage Banking origination at Capital Direct Funding, Inc., before transitioning in 2015 to Commercial Real Estate Brokerage as an Investment Analyst. He is an active member of CCIM, ULI, and ICSC, and serves on the board of the CCIM Greater Los Angeles Chapter. Francisco holds a B.A. in International Studies from the University of California, Irvine, the CCIM designation, Associate of the Royal Institute of Chartered Surveyors, and is a licensed real estate broker in California.",
+    image: "/team/francisco-williams.png",
     linkedin: "https://www.linkedin.com/in/francisco-williams-ccim",
   },
   {
     name: "Frank Williams",
     title: "Chief Investment Officer",
-    bio: "With a career spanning over 25 years in the mortgage banking industry, Frank Williams has earned a reputation as the go-to expert for even the most discerning buyers. Frank's journey in real estate finance began in 1990, specializing in Wholesale Mortgage Banking. His exceptional expertise propelled him to rapid success — in less than a decade, Frank played a pivotal role as Area Sales Manager for New Century Mortgage Corp., securing over $500 million in funding between 1998 and 2007. During the challenging aftermath of the 2007 market credit crisis, when many mortgage professionals were leaving the industry, Frank saw an opportunity for growth and founded Capital Direct Funding in 2009. As Chief Investment Officer of Williams Capital Group, Frank assumes the crucial responsibility of developing effective loan programs that exceed investor expectations. His deep understanding of the industry, coupled with his dedication to delivering unparalleled service, positions him as a true advocate for his clients' financial success.",
-    image: "/team/frank-williams.jpg",
+    bio: "With a career spanning more than 25 years in the mortgage banking industry, Frank serves as Chief Investment Officer of Williams Capital Group and as Co-Founder and head of Investor Relations at Capital Direct Funding, Inc. Frank's career in real estate finance began in 1990 in Wholesale Mortgage Banking. He played a pivotal role as Area Sales Manager for New Century Mortgage Corp. in the late 1990s and early 2000s. In 2009, following the market credit dislocation, Frank founded Capital Direct Funding, Inc. to deliver disciplined, relationship-driven private lending. At WCG, Frank is responsible for developing loan programs, evaluating credit, and supporting investor relationships — drawing on decades of experience across mortgage origination, underwriting, and capital markets.",
+    image: "/team/frank-williams.png",
     linkedin: "",
   },
 ];

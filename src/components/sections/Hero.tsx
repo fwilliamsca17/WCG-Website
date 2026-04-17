@@ -73,24 +73,21 @@ export default function Hero() {
         >
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 w-72">
             <p className="text-bronze-400 text-label uppercase tracking-widest mb-3">
-              Firm Snapshot
+              Strategy Focus
             </p>
-            <p className="font-serif text-5xl font-bold text-white mb-2">
-              11+ <span className="text-2xl text-charcoal-400">Years</span>
+            <p className="font-serif text-3xl font-bold text-white mb-3 leading-tight">
+              Senior Secured Real Estate Lending
             </p>
-            <p className="text-charcoal-400 text-body-sm">
-              Disciplined underwriting since inception
+            <p className="text-charcoal-400 text-body-sm leading-relaxed">
+              Conservative LTV targets, short-duration loans, California
+              real-estate collateral.
             </p>
             <div className="mt-6 pt-6 border-t border-white/10">
-              <div className="flex justify-between items-center">
-                <span className="text-charcoal-400 text-body-sm">Capital Deployed</span>
-                <span className="font-serif text-white font-bold text-xl">$170M+</span>
-              </div>
+              <p className="text-charcoal-400 text-xs leading-relaxed">
+                Available exclusively to verified accredited investors under
+                Rule 506(c) of Regulation D.
+              </p>
             </div>
-            <p className="text-charcoal-500 text-[10px] mt-4 leading-relaxed">
-              Historical figures. Past performance is not indicative of future
-              results.
-            </p>
           </div>
         </motion.div>
       </div>

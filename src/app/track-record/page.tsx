@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import TrackRecordContent from "./TrackRecordContent";
 
 export const metadata: Metadata = {
-  title: "Track Record — $170M+ Deployed, Zero Principal Loss",
+  title: "Approach & Experience",
   description:
-    "Williams Capital Group's aggregate firm activity since inception — over $170M deployed across 400+ transactions with no reported month of principal loss. Historical; not a guarantee of future results.",
+    "Williams Capital Group's approach to real estate-secured lending — conservative LTV targets, senior and second-lien positions, and a disciplined underwriting process. Informational only.",
   alternates: { canonical: "https://wcapitalgroupllc.com/track-record" },
   openGraph: {
-    title: "Track Record — Williams Capital Group",
+    title: "Approach & Experience — Williams Capital Group",
     description:
-      "$170M+ deployed, 400+ transactions, 11+ years in operation. Aggregate, historical firm figures. Past performance is not indicative of future results.",
+      "Conservative underwriting, real asset collateral, and a capital preservation focus. Detailed historical activity data available to verified accredited investors.",
     url: "https://wcapitalgroupllc.com/track-record",
   },
 };

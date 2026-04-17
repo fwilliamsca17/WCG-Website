@@ -59,9 +59,9 @@ const franciscoWilliamsSchema = {
   familyName: "Williams",
   jobTitle: "Managing Principal",
   description:
-    "Francisco Williams is the founding member and Managing Principal of Williams Capital Group LLC. He holds the CCIM designation, is an Associate of the Royal Institute of Chartered Surveyors, and is a licensed California real estate broker (DRE #02030467).",
+    "Francisco Williams, CCIM is the founding member and Managing Principal of Williams Capital Group LLC, and serves as President and Broker of Record at Capital Direct Funding, Inc. He holds the CCIM designation, is an Associate of the Royal Institute of Chartered Surveyors, and is a licensed California real estate broker.",
   url: `${BASE_URL}/team`,
-  image: `${BASE_URL}/team/francisco-williams.jpg`,
+  image: `${BASE_URL}/team/francisco-williams.png`,
   worksFor: {
     "@type": "Organization",
     "@id": `${BASE_URL}/#organization`,
@@ -109,7 +109,7 @@ const frankWilliamsSchema = {
   familyName: "Williams",
   jobTitle: "Chief Investment Officer",
   description:
-    "Frank Williams is the Chief Investment Officer of Williams Capital Group LLC with over 25 years of experience in the mortgage banking industry. He is the founder of Capital Direct Funding and previously served as Area Sales Manager for New Century Mortgage Corp.",
+    "Frank Williams is the Chief Investment Officer of Williams Capital Group LLC and Co-Founder of Capital Direct Funding, Inc. With more than 25 years of experience in the mortgage banking industry, Frank leads investor relations and credit program development.",
   url: `${BASE_URL}/team`,
   worksFor: {
     "@type": "Organization",

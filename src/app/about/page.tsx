@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Williams Capital Group — Private Debt Fund",
     description:
-      "California private lending firm with 11+ years of disciplined underwriting. Focused on real estate-secured transactions and capital preservation.",
+      "California private lending firm focused on real estate-secured transactions and capital preservation. Available to verified accredited investors under Rule 506(c).",
     url: "https://wcapitalgroupllc.com/about",
   },
 };

@@ -93,11 +93,22 @@ export default function Footer() {
             <h4 className="font-serif font-semibold text-heading-sm mb-6">
               Important Information
             </h4>
-            <p className="text-charcoal-500 text-xs leading-relaxed mb-4">
+            <p className="text-charcoal-500 text-xs leading-relaxed mb-3">
               This website is for informational purposes only and does not
-              constitute an offer to sell or a solicitation of an offer to buy
-              any security. Any offer will be made only through definitive
-              offering documents delivered to qualified accredited investors.
+              constitute an offer to sell or a solicitation of an offer to
+              buy any security. Any offer is made only through definitive
+              offering documents to verified accredited investors under{" "}
+              <strong className="text-charcoal-400">
+                Rule 506(c) of Regulation D
+              </strong>
+              .
+            </p>
+            <p className="text-charcoal-500 text-xs leading-relaxed mb-3">
+              Loans originated through{" "}
+              <strong className="text-charcoal-400">
+                Capital Direct Funding, Inc.
+              </strong>{" "}
+              (CA DRE #01885595, NMLS #1159831).
             </p>
             <p className="text-charcoal-500 text-xs leading-relaxed">
               Past performance is not indicative of future results. All
