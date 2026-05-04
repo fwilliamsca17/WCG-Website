@@ -3,52 +3,43 @@
 import FadeIn from "@/components/ui/FadeIn";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
-import {
-  ArrowDown,
-  CheckCircle2,
-  Building2,
-  Home,
-  Warehouse,
-} from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const LOAN_PROGRAMS = [
   {
-    icon: Home,
     name: "Residential Bridge",
     description:
       "Short-term bridge loans for residential property acquisitions, fix-and-flip projects, and ground-up construction in California markets.",
     details: [
-      "Loan sizes: $250K – $5M",
-      "LTV: Up to 70%",
-      "Terms: 6–24 months",
-      "Interest-only payments",
-      "1st lien position",
+      ["Loan sizes", "$250K – $5M"],
+      ["LTV", "Up to 70%"],
+      ["Terms", "6–24 months"],
+      ["Payments", "Interest-only"],
+      ["Position", "1st lien"],
     ],
   },
   {
-    icon: Building2,
     name: "Multifamily Bridge",
     description:
       "Transitional financing for value-add multifamily acquisitions, repositioning strategies, and stabilization capital across California.",
     details: [
-      "Loan sizes: $500K – $10M",
-      "LTV: Up to 65%",
-      "Terms: 12–36 months",
-      "Interest-only structure",
-      "1st or 2nd lien position",
+      ["Loan sizes", "$500K – $10M"],
+      ["LTV", "Up to 65%"],
+      ["Terms", "12–36 months"],
+      ["Payments", "Interest-only"],
+      ["Position", "1st or 2nd lien"],
     ],
   },
   {
-    icon: Warehouse,
     name: "Commercial Bridge",
     description:
       "Short-term financing solutions for commercial property acquisitions, refinances, and value-add business plans requiring speed and flexibility.",
     details: [
-      "Loan sizes: $500K – $10M",
-      "LTV: Up to 60%",
-      "Terms: 12–24 months",
-      "Interest-only payments",
-      "1st or 2nd lien position",
+      ["Loan sizes", "$500K – $10M"],
+      ["LTV", "Up to 60%"],
+      ["Terms", "12–24 months"],
+      ["Payments", "Interest-only"],
+      ["Position", "1st or 2nd lien"],
     ],
   },
 ];
@@ -185,40 +176,44 @@ export default function StrategyContent() {
       <section className="section-padding-y bg-white">
         <div className="max-w-7xl mx-auto section-padding">
           <FadeIn>
-            <SectionHeading
-              label="Loan Programs"
-              title="Collateral-Backed Lending Across Asset Classes"
-              subtitle="Our lending platform serves experienced real estate operators with speed, certainty, and flexible structuring across three core property types."
-            />
+            <div className="max-w-3xl">
+              <p className="label-text text-silver-600 mb-4">Loan Programs</p>
+              <h2 className="font-serif text-display font-bold text-slate-950 mb-6 leading-tight">
+                Collateral-backed lending across three asset classes.
+              </h2>
+              <p className="text-body-lg text-slate-600 leading-relaxed">
+                Speed, certainty, and flexible structuring for experienced
+                real estate operators.
+              </p>
+            </div>
           </FadeIn>
 
-          <div className="grid lg:grid-cols-3 gap-8 mt-16">
+          <div className="grid lg:grid-cols-3 gap-px mt-16 bg-slate-200 border border-slate-200">
             {LOAN_PROGRAMS.map((program, i) => (
               <FadeIn key={program.name} delay={i * 0.1}>
-                <div className="bg-ivory rounded-md p-8 border border-slate-100 h-full">
-                  <div className="w-12 h-12 rounded-md bg-navy-50 flex items-center justify-center mb-5">
-                    <program.icon size={22} className="text-navy-700" />
-                  </div>
-                  <h3 className="font-serif text-heading font-semibold text-slate-950 mb-3">
+                <div className="bg-white p-8 lg:p-10 h-full flex flex-col">
+                  <p className="label-text text-silver-600 mb-3">
+                    Program 0{i + 1}
+                  </p>
+                  <h3 className="font-serif text-heading font-semibold text-slate-950 mb-4 leading-tight">
                     {program.name}
                   </h3>
-                  <p className="text-slate-600 text-body-sm leading-relaxed mb-6">
+                  <p className="text-slate-600 text-body-sm leading-relaxed mb-8">
                     {program.description}
                   </p>
-                  <ul className="space-y-2">
-                    {program.details.map((detail) => (
-                      <li
-                        key={detail}
-                        className="flex items-center gap-2 text-body-sm text-slate-700"
+                  <dl className="mt-auto space-y-3 pt-6 border-t border-slate-100">
+                    {program.details.map(([label, value]) => (
+                      <div
+                        key={label}
+                        className="flex justify-between items-baseline text-body-sm tabular-nums"
                       >
-                        <ArrowDown
-                          size={12}
-                          className="text-navy-600 rotate-[-90deg]"
-                        />
-                        {detail}
-                      </li>
+                        <dt className="text-slate-500">{label}</dt>
+                        <dd className="text-slate-950 font-medium text-right">
+                          {value}
+                        </dd>
+                      </div>
                     ))}
-                  </ul>
+                  </dl>
                 </div>
               </FadeIn>
             ))}
@@ -229,31 +224,40 @@ export default function StrategyContent() {
       {/* Process */}
       <section className="section-padding-y bg-slate-950">
         <div className="max-w-7xl mx-auto section-padding">
-          <FadeIn>
-            <SectionHeading
-              label="Our Process"
-              title="From Origination to Exit"
-              subtitle="A rigorous, four-stage process is designed to evaluate every loan against institutional-quality standards from origination through resolution."
-              dark
-            />
-          </FadeIn>
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 lg:gap-24">
+            <FadeIn>
+              <div className="lg:sticky lg:top-32">
+                <p className="label-text text-silver-400 mb-4">Our Process</p>
+                <h2 className="font-serif text-display font-bold text-white mb-6 leading-tight">
+                  From origination to exit.
+                </h2>
+                <p className="text-body text-slate-300 leading-relaxed">
+                  A rigorous four-stage process evaluates every loan against
+                  institutional-quality standards from origination through
+                  resolution.
+                </p>
+              </div>
+            </FadeIn>
 
-          <div className="grid md:grid-cols-2 gap-6 mt-16">
-            {PROCESS_STEPS.map((step, i) => (
-              <FadeIn key={step.step} delay={i * 0.1}>
-                <div className="bg-white/5 border border-white/10 rounded-md p-8 hover:border-navy-600/30 transition-colors h-full">
-                  <span className="font-serif text-3xl font-bold text-navy-500 mb-4 block">
-                    {step.step}
-                  </span>
-                  <h3 className="font-serif text-heading-sm font-semibold text-white mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-400 text-body-sm leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
+            <div className="space-y-10">
+              {PROCESS_STEPS.map((step, i) => (
+                <FadeIn key={step.step} delay={i * 0.05}>
+                  <div className="grid grid-cols-[auto_1fr] gap-6 pb-10 border-b border-white/10 last:border-0 last:pb-0">
+                    <span className="font-serif text-2xl font-light text-silver-400 tabular-nums leading-none mt-1">
+                      {step.step}
+                    </span>
+                    <div>
+                      <h3 className="font-serif text-heading font-semibold text-white mb-3 leading-tight">
+                        {step.title}
+                      </h3>
+                      <p className="text-slate-300 text-body leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -3,29 +3,25 @@
 import FadeIn from "@/components/ui/FadeIn";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
-import { CheckCircle2, Shield, Layers, TrendingDown, Target } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const PRINCIPLES = [
   {
-    icon: Shield,
     title: "Senior Secured Positioning",
     description:
       "Loans are structured as senior or second-lien positions secured by real estate collateral — designed to provide priority repayment protection.",
   },
   {
-    icon: TrendingDown,
     title: "Conservative LTV Targets",
     description:
       "Loan-to-value targets are set conservatively to maintain a meaningful collateral cushion relative to the underlying asset value.",
   },
   {
-    icon: Layers,
     title: "Portfolio Diversification",
     description:
       "Capital is deployed across residential, multifamily, and commercial collateral types in California markets, seeking diversification of concentration risk.",
   },
   {
-    icon: Target,
     title: "Active Asset Management",
     description:
       "In-house servicing and asset management monitor performance throughout each loan's life — from funding through exit — to identify and address issues early.",
@@ -72,32 +68,40 @@ export default function TrackRecordContent() {
       {/* Principles */}
       <section className="section-padding-y bg-ivory">
         <div className="max-w-7xl mx-auto section-padding">
-          <FadeIn>
-            <SectionHeading
-              label="Portfolio Principles"
-              title="Conservative by Design"
-              subtitle="Our portfolio is constructed around a set of disciplined principles that reflect the firm's capital preservation orientation."
-            />
-          </FadeIn>
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 lg:gap-24">
+            <FadeIn>
+              <div className="lg:sticky lg:top-32">
+                <p className="label-text text-silver-600 mb-4">Portfolio Principles</p>
+                <h2 className="font-serif text-display font-bold text-slate-950 mb-6 leading-tight">
+                  Conservative by design.
+                </h2>
+                <p className="text-body text-slate-600 leading-relaxed">
+                  The portfolio is constructed around a small set of
+                  disciplined principles that reflect the firm&apos;s capital
+                  preservation orientation.
+                </p>
+              </div>
+            </FadeIn>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-16">
-            {PRINCIPLES.map((item, i) => (
-              <FadeIn key={item.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-8 rounded-md bg-white border border-slate-100 h-full">
-                  <div className="w-12 h-12 rounded-md bg-navy-50 flex items-center justify-center shrink-0">
-                    <item.icon size={22} className="text-navy-700" />
+            <div className="space-y-10">
+              {PRINCIPLES.map((item, i) => (
+                <FadeIn key={item.title} delay={i * 0.05}>
+                  <div className="grid grid-cols-[auto_1fr] gap-6 pb-10 border-b border-slate-200 last:border-0 last:pb-0">
+                    <span className="font-serif text-2xl font-light text-silver-500 tabular-nums leading-none mt-1">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <h3 className="font-serif text-heading font-semibold text-slate-950 mb-3 leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-slate-600 text-body leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-600 text-body-sm leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>

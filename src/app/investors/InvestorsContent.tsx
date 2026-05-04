@@ -5,10 +5,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import {
   CheckCircle2,
-  Shield,
   BarChart3,
-  TrendingUp,
-  Clock,
   DollarSign,
   AlertCircle,
 } from "lucide-react";
@@ -28,25 +25,21 @@ const FUND_TERMS = [
 
 const INVESTMENT_PHILOSOPHY = [
   {
-    icon: Shield,
     title: "Capital Preservation Focus",
     description:
       "Every lending decision begins with downside analysis. Conservative loan-to-value ratios and rigorous underwriting are designed to maintain a meaningful margin of safety on each transaction.",
   },
   {
-    icon: BarChart3,
     title: "Income-Oriented Strategy",
     description:
       "WCG's strategy seeks to generate a steady income stream from a diversified portfolio of real estate-secured loans. Distribution amounts and frequency are subject to the terms of the applicable offering and are not guaranteed.",
   },
   {
-    icon: TrendingUp,
     title: "Seeking Risk-Adjusted Outcomes",
     description:
       "By focusing on senior and private loans secured by real estate, WCG seeks favorable risk-adjusted outcomes while actively managing credit and collateral risk. There is no assurance investment objectives will be achieved.",
   },
   {
-    icon: Clock,
     title: "Short Duration, Real Asset Collateral",
     description:
       "Short-term loan durations may reduce interest-rate sensitivity, and real estate collateral provides a tangible asset base that is less directly correlated with public market movements.",
@@ -222,32 +215,39 @@ export default function InvestorsContent() {
       {/* Investment Philosophy */}
       <section className="section-padding-y bg-white">
         <div className="max-w-7xl mx-auto section-padding">
-          <FadeIn>
-            <SectionHeading
-              label="Investment Philosophy"
-              title="How We Protect & Grow Your Capital"
-              subtitle="WCG combines expertise in real estate lending with a meticulous approach to investment selection, always striving to provide investors with compelling risk-adjusted returns."
-            />
-          </FadeIn>
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 lg:gap-24">
+            <FadeIn>
+              <div className="lg:sticky lg:top-32">
+                <p className="label-text text-silver-600 mb-4">Investment Philosophy</p>
+                <h2 className="font-serif text-display font-bold text-slate-950 mb-6 leading-tight">
+                  How we protect and grow your capital.
+                </h2>
+                <p className="text-body text-slate-600 leading-relaxed">
+                  WCG combines expertise in real estate lending with a
+                  meticulous approach to investment selection.
+                </p>
+              </div>
+            </FadeIn>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-16">
-            {INVESTMENT_PHILOSOPHY.map((item, i) => (
-              <FadeIn key={item.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-8 rounded-md bg-ivory border border-slate-100 h-full">
-                  <div className="w-12 h-12 rounded-md bg-navy-50 flex items-center justify-center shrink-0">
-                    <item.icon size={22} className="text-navy-700" />
+            <div className="space-y-10">
+              {INVESTMENT_PHILOSOPHY.map((item, i) => (
+                <FadeIn key={item.title} delay={i * 0.05}>
+                  <div className="grid grid-cols-[auto_1fr] gap-6 pb-10 border-b border-slate-200 last:border-0 last:pb-0">
+                    <span className="font-serif text-2xl font-light text-silver-500 tabular-nums leading-none mt-1">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <h3 className="font-serif text-heading font-semibold text-slate-950 mb-3 leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-slate-600 text-body leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-600 text-body-sm leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -296,30 +296,39 @@ export default function InvestorsContent() {
       {/* Investment Process */}
       <section className="section-padding-y bg-ivory">
         <div className="max-w-7xl mx-auto section-padding">
-          <FadeIn>
-            <SectionHeading
-              label="Getting Started"
-              title="How to Invest"
-              subtitle="A straightforward process designed to provide transparency and support at every stage."
-            />
-          </FadeIn>
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 lg:gap-24">
+            <FadeIn>
+              <div className="lg:sticky lg:top-32">
+                <p className="label-text text-silver-600 mb-4">Getting Started</p>
+                <h2 className="font-serif text-display font-bold text-slate-950 mb-6 leading-tight">
+                  How to invest.
+                </h2>
+                <p className="text-body text-slate-600 leading-relaxed">
+                  A straightforward process designed to provide transparency
+                  and support at every stage.
+                </p>
+              </div>
+            </FadeIn>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-            {PROCESS_STEPS.map((step, i) => (
-              <FadeIn key={step.step} delay={i * 0.1}>
-                <div className="bg-white rounded-md border border-slate-100 p-8 h-full">
-                  <span className="font-serif text-3xl font-bold text-navy-600 mb-4 block">
-                    {step.step}
-                  </span>
-                  <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-600 text-body-sm leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
+            <div className="space-y-10">
+              {PROCESS_STEPS.map((step, i) => (
+                <FadeIn key={step.step} delay={i * 0.05}>
+                  <div className="grid grid-cols-[auto_1fr] gap-6 pb-10 border-b border-slate-200 last:border-0 last:pb-0">
+                    <span className="font-serif text-2xl font-light text-silver-500 tabular-nums leading-none mt-1">
+                      {step.step}
+                    </span>
+                    <div>
+                      <h3 className="font-serif text-heading font-semibold text-slate-950 mb-3 leading-tight">
+                        {step.title}
+                      </h3>
+                      <p className="text-slate-600 text-body leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>

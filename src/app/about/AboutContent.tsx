@@ -3,29 +3,23 @@
 import FadeIn from "@/components/ui/FadeIn";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
-import { Shield, Target, Users, Building2 } from "lucide-react";
-
 const VALUES = [
   {
-    icon: Shield,
     title: "Capital Preservation First",
     description:
       "Every lending decision begins with downside analysis. We ask 'what can go wrong' before 'what can we earn.' This philosophy shapes our conservative approach to loan-to-value, collateral, and borrower selection.",
   },
   {
-    icon: Target,
     title: "Disciplined Underwriting",
     description:
       "Conservative loan-to-value ratios, thorough due diligence, and experienced borrower assessment. We decline more opportunities than we fund — selectivity is our edge.",
   },
   {
-    icon: Users,
     title: "Alignment of Interests",
     description:
       "Our principals invest alongside our fund investors. When your capital is at work, so is ours. This ensures every decision is made with a shared commitment to protecting capital.",
   },
   {
-    icon: Building2,
     title: "Vertical Integration",
     description:
       "In-house origination, underwriting, servicing, and asset management provides complete control over the loan lifecycle and enables rapid, informed decision-making at every stage.",
@@ -142,32 +136,39 @@ export default function AboutContent() {
       {/* Values */}
       <section className="section-padding-y bg-white">
         <div className="max-w-7xl mx-auto section-padding">
-          <FadeIn>
-            <SectionHeading
-              label="Our Philosophy"
-              title="Principles That Guide Every Decision"
-              subtitle="We believe that durable outcomes are built on discipline, transparency, and a consistent focus on protecting investor capital."
-            />
-          </FadeIn>
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 lg:gap-24">
+            <FadeIn>
+              <div className="lg:sticky lg:top-32">
+                <p className="label-text text-silver-600 mb-4">Our Philosophy</p>
+                <h2 className="font-serif text-display font-bold text-slate-950 mb-6 leading-tight">
+                  Principles that guide every decision.
+                </h2>
+                <p className="text-body text-slate-600 leading-relaxed">
+                  Durable outcomes are built on discipline, transparency, and
+                  a consistent focus on protecting investor capital.
+                </p>
+              </div>
+            </FadeIn>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-16">
-            {VALUES.map((value, i) => (
-              <FadeIn key={value.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-6 rounded-md hover:bg-navy-50/50 transition-colors">
-                  <div className="w-12 h-12 rounded-md bg-navy-50 flex items-center justify-center shrink-0">
-                    <value.icon size={22} className="text-navy-700" />
+            <div className="space-y-10">
+              {VALUES.map((value, i) => (
+                <FadeIn key={value.title} delay={i * 0.05}>
+                  <div className="grid grid-cols-[auto_1fr] gap-6 pb-10 border-b border-slate-200 last:border-0 last:pb-0">
+                    <span className="font-serif text-2xl font-light text-silver-500 tabular-nums leading-none mt-1">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <h3 className="font-serif text-heading font-semibold text-slate-950 mb-3 leading-tight">
+                        {value.title}
+                      </h3>
+                      <p className="text-slate-600 text-body leading-relaxed">
+                        {value.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-2">
-                      {value.title}
-                    </h3>
-                    <p className="text-slate-600 text-body-sm leading-relaxed">
-                      {value.description}
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
