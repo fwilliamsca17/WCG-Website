@@ -75,7 +75,7 @@ export default function ContactContent() {
           <div className="grid lg:grid-cols-[1fr_400px] gap-16">
             {/* Form */}
             <FadeIn>
-              <div className="bg-white rounded-2xl border border-slate-100 p-8 md:p-10">
+              <div className="bg-white rounded-md border border-slate-100 p-8 md:p-10">
                 {submitted ? (
                   <div className="text-center py-12">
                     <div className="w-16 h-16 rounded-full bg-navy-50 flex items-center justify-center mx-auto mb-6">
@@ -297,7 +297,7 @@ export default function ContactContent() {
             <FadeIn delay={0.15}>
               <div className="space-y-6">
                 {/* Contact Info */}
-                <div className="bg-white rounded-2xl border border-slate-100 p-8">
+                <div className="bg-white rounded-md border border-slate-100 p-8">
                   <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-6">
                     Contact Information
                   </h3>
@@ -357,7 +357,7 @@ export default function ContactContent() {
                 </div>
 
                 {/* Investor Info */}
-                <div className="bg-navy-800 rounded-2xl p-8">
+                <div className="bg-navy-800 rounded-md p-8">
                   <h3 className="font-serif text-heading-sm font-semibold text-white mb-4">
                     For Accredited Investors
                   </h3>
@@ -390,7 +390,7 @@ export default function ContactContent() {
                 </div>
 
                 {/* Map placeholder */}
-                <div className="bg-slate-100 rounded-2xl h-48 flex items-center justify-center">
+                <div className="bg-slate-100 rounded-md h-48 flex items-center justify-center">
                   <div className="text-center">
                     <MapPin
                       size={28}

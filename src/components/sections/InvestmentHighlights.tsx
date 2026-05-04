@@ -1,59 +1,48 @@
 "use client";
 
-import {
-  Shield,
-  Layers,
-  Lock,
-  TrendingUp,
-  BarChart3,
-  MapPin,
-} from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
-import SectionHeading from "@/components/ui/SectionHeading";
 import { FUND_HIGHLIGHTS } from "@/lib/constants";
-
-const iconMap: Record<string, React.ElementType> = {
-  Shield,
-  Layers,
-  Lock,
-  TrendingUp,
-  BarChart3,
-  MapPin,
-};
 
 export default function InvestmentHighlights() {
   return (
     <section className="section-padding-y bg-ivory">
       <div className="max-w-7xl mx-auto section-padding">
-        <FadeIn>
-          <SectionHeading
-            label="Why WCG"
-            title="A Disciplined Approach to Private Lending"
-            subtitle="Our vertically integrated platform combines rigorous underwriting with hands-on asset management, seeking consistent, risk-adjusted outcomes for our investors."
-          />
-        </FadeIn>
+        <div className="grid lg:grid-cols-[1fr_2fr] gap-16 lg:gap-24">
+          {/* Anchor heading — editorial, left-aligned */}
+          <FadeIn>
+            <div className="lg:sticky lg:top-32">
+              <p className="label-text text-silver-600 mb-4">Why WCG</p>
+              <h2 className="font-serif text-display font-bold text-slate-950 mb-6 leading-tight">
+                A disciplined approach to private lending.
+              </h2>
+              <p className="text-body text-slate-600 leading-relaxed">
+                Vertically integrated origination, underwriting, servicing,
+                and asset management — built around capital preservation
+                first, yield second.
+              </p>
+            </div>
+          </FadeIn>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-          {FUND_HIGHLIGHTS.map((item, i) => {
-            const Icon = iconMap[item.icon];
-            return (
-              <FadeIn key={item.title} delay={i * 0.08}>
-                <div className="bg-white rounded-2xl p-8 border border-slate-100 hover:border-navy-200 hover:shadow-lg transition-all duration-300 h-full group">
-                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center mb-5 group-hover:bg-navy-100 transition-colors">
-                    {Icon && (
-                      <Icon size={22} className="text-navy-700" />
-                    )}
+          {/* Numbered pillars — editorial list, no icon-in-circle pattern */}
+          <div className="space-y-10">
+            {FUND_HIGHLIGHTS.map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.05}>
+                <div className="grid grid-cols-[auto_1fr] gap-6 pb-10 border-b border-slate-200 last:border-0 last:pb-0">
+                  <span className="font-serif text-2xl font-light text-silver-500 tabular-nums leading-none mt-1">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <h3 className="font-serif text-heading font-semibold text-slate-950 mb-3 leading-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-600 text-body leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
-                  <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 text-body-sm leading-relaxed">
-                    {item.description}
-                  </p>
                 </div>
               </FadeIn>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>

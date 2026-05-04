@@ -32,7 +32,7 @@
   }
 
   .glass-card {
-    @apply bg-white/80 backdrop-blur-sm border border-slate-100 rounded-2xl;
+    @apply bg-white/80 backdrop-blur-sm border border-slate-100 rounded-md;
   }
 
   .stat-number {

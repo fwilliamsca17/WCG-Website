@@ -45,7 +45,7 @@ export default function TeamContent() {
           <div className="mt-16 max-w-4xl mx-auto">
             {TEAM_MEMBERS.map((member, i) => (
               <FadeIn key={member.name} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl border border-slate-100 overflow-hidden mb-8">
+                <div className="bg-white rounded-md border border-slate-100 overflow-hidden mb-8">
                   <div className="grid md:grid-cols-[300px_1fr] gap-0">
                     <div className="relative bg-gradient-to-br from-navy-800 to-navy-950 min-h-[320px] md:min-h-full">
                       <Image

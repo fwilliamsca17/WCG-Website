@@ -194,7 +194,7 @@ export default function InvestorsContent() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-slate-950 rounded-2xl p-10">
+              <div className="bg-slate-950 rounded-md p-10">
                 <h3 className="font-serif text-heading font-semibold text-white mb-8">
                   Fund Terms
                 </h3>
@@ -233,8 +233,8 @@ export default function InvestorsContent() {
           <div className="grid md:grid-cols-2 gap-8 mt-16">
             {INVESTMENT_PHILOSOPHY.map((item, i) => (
               <FadeIn key={item.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-8 rounded-2xl bg-ivory border border-slate-100 h-full">
-                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center shrink-0">
+                <div className="flex gap-6 p-8 rounded-md bg-ivory border border-slate-100 h-full">
+                  <div className="w-12 h-12 rounded-md bg-navy-50 flex items-center justify-center shrink-0">
                     <item.icon size={22} className="text-navy-700" />
                   </div>
                   <div>
@@ -278,7 +278,7 @@ export default function InvestorsContent() {
                 {WHY_INVEST.map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl px-6 py-4"
+                    className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-md px-6 py-4"
                   >
                     <CheckCircle2
                       size={18}
@@ -307,7 +307,7 @@ export default function InvestorsContent() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
             {PROCESS_STEPS.map((step, i) => (
               <FadeIn key={step.step} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl border border-slate-100 p-8 h-full">
+                <div className="bg-white rounded-md border border-slate-100 p-8 h-full">
                   <span className="font-serif text-3xl font-bold text-navy-600 mb-4 block">
                     {step.step}
                   </span>
@@ -328,7 +328,7 @@ export default function InvestorsContent() {
       <section className="section-padding-y bg-white">
         <div className="max-w-4xl mx-auto section-padding">
           <FadeIn>
-            <div className="bg-navy-50 border border-navy-200 rounded-2xl p-8 md:p-10">
+            <div className="bg-navy-50 border border-navy-200 rounded-md p-8 md:p-10">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-navy-100 flex items-center justify-center shrink-0">
                   <AlertCircle size={20} className="text-navy-700" />
@@ -350,7 +350,7 @@ export default function InvestorsContent() {
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-xl p-6">
+                <div className="bg-white rounded-md p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <DollarSign size={18} className="text-navy-600" />
                     <h4 className="font-semibold text-slate-950 text-body-sm">
@@ -364,7 +364,7 @@ export default function InvestorsContent() {
                     current year.
                   </p>
                 </div>
-                <div className="bg-white rounded-xl p-6">
+                <div className="bg-white rounded-md p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <BarChart3 size={18} className="text-navy-600" />
                     <h4 className="font-semibold text-slate-950 text-body-sm">

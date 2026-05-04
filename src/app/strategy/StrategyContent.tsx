@@ -147,7 +147,7 @@ export default function StrategyContent() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-slate-950 rounded-2xl p-10 text-white">
+              <div className="bg-slate-950 rounded-md p-10 text-white">
                 <h3 className="font-serif text-heading font-semibold mb-8">
                   Fund Parameters
                 </h3>
@@ -195,8 +195,8 @@ export default function StrategyContent() {
           <div className="grid lg:grid-cols-3 gap-8 mt-16">
             {LOAN_PROGRAMS.map((program, i) => (
               <FadeIn key={program.name} delay={i * 0.1}>
-                <div className="bg-ivory rounded-2xl p-8 border border-slate-100 h-full">
-                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center mb-5">
+                <div className="bg-ivory rounded-md p-8 border border-slate-100 h-full">
+                  <div className="w-12 h-12 rounded-md bg-navy-50 flex items-center justify-center mb-5">
                     <program.icon size={22} className="text-navy-700" />
                   </div>
                   <h3 className="font-serif text-heading font-semibold text-slate-950 mb-3">
@@ -241,7 +241,7 @@ export default function StrategyContent() {
           <div className="grid md:grid-cols-2 gap-6 mt-16">
             {PROCESS_STEPS.map((step, i) => (
               <FadeIn key={step.step} delay={i * 0.1}>
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-navy-600/30 transition-colors h-full">
+                <div className="bg-white/5 border border-white/10 rounded-md p-8 hover:border-navy-600/30 transition-colors h-full">
                   <span className="font-serif text-3xl font-bold text-navy-500 mb-4 block">
                     {step.step}
                   </span>

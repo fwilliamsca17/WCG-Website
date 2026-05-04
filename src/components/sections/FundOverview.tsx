@@ -27,7 +27,7 @@ export default function FundOverview() {
         <div className="grid md:grid-cols-3 gap-6 mt-16">
           {ASSET_CLASSES.map((asset, i) => (
             <FadeIn key={asset.name} delay={i * 0.12}>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/8 hover:border-navy-600/30 transition-all duration-300 h-full">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-md p-8 hover:bg-white/8 hover:border-navy-600/30 transition-all duration-300 h-full">
                 <h3 className="font-serif text-heading font-semibold text-white mb-4">
                   {asset.name}
                 </h3>

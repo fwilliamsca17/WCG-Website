@@ -83,8 +83,8 @@ export default function TrackRecordContent() {
           <div className="grid md:grid-cols-2 gap-8 mt-16">
             {PRINCIPLES.map((item, i) => (
               <FadeIn key={item.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-8 rounded-2xl bg-white border border-slate-100 h-full">
-                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center shrink-0">
+                <div className="flex gap-6 p-8 rounded-md bg-white border border-slate-100 h-full">
+                  <div className="w-12 h-12 rounded-md bg-navy-50 flex items-center justify-center shrink-0">
                     <item.icon size={22} className="text-navy-700" />
                   </div>
                   <div>
@@ -142,7 +142,7 @@ export default function TrackRecordContent() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-slate-950 rounded-2xl p-10">
+              <div className="bg-slate-950 rounded-md p-10">
                 <h3 className="font-serif text-heading font-semibold text-white mb-8">
                   Typical Parameters
                 </h3>

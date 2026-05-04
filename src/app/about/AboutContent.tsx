@@ -96,7 +96,7 @@ export default function AboutContent() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-white rounded-2xl border border-slate-100 p-10">
+              <div className="bg-white rounded-md border border-slate-100 p-10">
                 <h3 className="font-serif text-heading font-semibold text-slate-950 mb-8">
                   Fund at a Glance
                 </h3>
@@ -153,8 +153,8 @@ export default function AboutContent() {
           <div className="grid md:grid-cols-2 gap-8 mt-16">
             {VALUES.map((value, i) => (
               <FadeIn key={value.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-6 rounded-2xl hover:bg-navy-50/50 transition-colors">
-                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center shrink-0">
+                <div className="flex gap-6 p-6 rounded-md hover:bg-navy-50/50 transition-colors">
+                  <div className="w-12 h-12 rounded-md bg-navy-50 flex items-center justify-center shrink-0">
                     <value.icon size={22} className="text-navy-700" />
                   </div>
                   <div>

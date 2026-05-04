@@ -31,10 +31,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="font-serif text-display-lg md:text-display-xl font-bold text-white mb-8 text-balance"
+            className="font-serif text-display-lg md:text-display-xl font-bold text-white mb-8 text-balance leading-[1.05]"
           >
-            Capital Preservation Through{" "}
-            <span className="text-navy-400">Disciplined Lending</span>
+            Senior-secured real estate debt,{" "}
+            <span className="text-silver-300">underwritten in California.</span>
           </motion.h1>
 
           <motion.p
@@ -43,10 +43,10 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-body-lg text-slate-300 max-w-2xl mb-10 leading-relaxed"
           >
-            A California-based private lending firm focused on short-term
-            real estate-secured transactions, seeking to deliver consistent
-            income through disciplined underwriting and a conservative margin
-            of safety.
+            Williams Capital Group originates, underwrites, and services
+            short-duration loans secured by California real estate &mdash;
+            built for accredited investors who want income with a meaningful
+            margin of safety.
           </motion.p>
 
           <motion.div
@@ -71,7 +71,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="hidden xl:block absolute right-28 top-1/2 -translate-y-1/2"
         >
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 w-72">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-md p-8 w-72">
             <p className="text-silver-400 text-label uppercase tracking-widest mb-3">
               Strategy Focus
             </p>
