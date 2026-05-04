@@ -29,7 +29,7 @@ export default function SectionHeading({
         <p
           className={cn(
             "label-text mb-4",
-            dark ? "text-bronze-400" : "text-bronze-600"
+            dark ? "text-silver-400" : "text-silver-600"
           )}
         >
           {label}
@@ -38,7 +38,7 @@ export default function SectionHeading({
       <h2
         className={cn(
           "font-serif text-display md:text-display-lg font-bold mb-6",
-          dark ? "text-white" : "text-charcoal-950"
+          dark ? "text-white" : "text-slate-950"
         )}
       >
         {title}
@@ -47,7 +47,7 @@ export default function SectionHeading({
         <p
           className={cn(
             "text-body-lg leading-relaxed",
-            dark ? "text-charcoal-300" : "text-charcoal-600"
+            dark ? "text-slate-300" : "text-slate-600"
           )}
         >
           {subtitle}

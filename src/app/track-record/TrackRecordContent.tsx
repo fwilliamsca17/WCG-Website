@@ -45,20 +45,20 @@ export default function TrackRecordContent() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-b from-charcoal-950 to-forest-950">
+      <section className="relative pt-32 pb-20 bg-gradient-to-b from-slate-950 to-navy-950">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
           backgroundSize: "40px 40px",
         }} />
         <div className="relative max-w-7xl mx-auto section-padding">
           <FadeIn>
-            <p className="label-text text-bronze-400 mb-4">
+            <p className="label-text text-silver-400 mb-4">
               Approach &amp; Experience
             </p>
             <h1 className="font-serif text-display-lg font-bold text-white mb-6 max-w-3xl">
               A Discipline Built Over Time
             </h1>
-            <p className="text-body-lg text-charcoal-300 max-w-2xl leading-relaxed">
+            <p className="text-body-lg text-slate-300 max-w-2xl leading-relaxed">
               Williams Capital Group&apos;s underwriting and asset-management
               discipline has been refined through more than a decade of
               real estate-secured lending across California markets.
@@ -83,15 +83,15 @@ export default function TrackRecordContent() {
           <div className="grid md:grid-cols-2 gap-8 mt-16">
             {PRINCIPLES.map((item, i) => (
               <FadeIn key={item.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-8 rounded-2xl bg-white border border-charcoal-100 h-full">
-                  <div className="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center shrink-0">
-                    <item.icon size={22} className="text-forest-700" />
+                <div className="flex gap-6 p-8 rounded-2xl bg-white border border-slate-100 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center shrink-0">
+                    <item.icon size={22} className="text-navy-700" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-heading-sm font-semibold text-charcoal-950 mb-2">
+                    <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                    <p className="text-slate-600 text-body-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -113,7 +113,7 @@ export default function TrackRecordContent() {
                   title="How Loans Are Structured"
                   align="left"
                 />
-                <div className="mt-8 space-y-6 text-charcoal-600 text-body leading-relaxed">
+                <div className="mt-8 space-y-6 text-slate-600 text-body leading-relaxed">
                   <p>
                     WCG&apos;s lending parameters reflect the firm&apos;s
                     conservative, capital-preservation-first philosophy. Each
@@ -131,7 +131,7 @@ export default function TrackRecordContent() {
                       <li key={item} className="flex items-start gap-3">
                         <CheckCircle2
                           size={18}
-                          className="text-forest-600 mt-0.5 shrink-0"
+                          className="text-navy-600 mt-0.5 shrink-0"
                         />
                         <span>{item}</span>
                       </li>
@@ -142,7 +142,7 @@ export default function TrackRecordContent() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-charcoal-950 rounded-2xl p-10">
+              <div className="bg-slate-950 rounded-2xl p-10">
                 <h3 className="font-serif text-heading font-semibold text-white mb-8">
                   Typical Parameters
                 </h3>
@@ -152,7 +152,7 @@ export default function TrackRecordContent() {
                       key={label}
                       className="flex justify-between items-center pb-4 border-b border-white/10 last:border-0 last:pb-0"
                     >
-                      <span className="text-charcoal-400 text-body-sm">
+                      <span className="text-slate-400 text-body-sm">
                         {label}
                       </span>
                       <span className="text-white font-medium text-body-sm text-right">
@@ -161,12 +161,12 @@ export default function TrackRecordContent() {
                     </div>
                   ))}
                 </div>
-                <p className="text-charcoal-500 text-xs mt-6 leading-relaxed">
+                <p className="text-slate-500 text-xs mt-6 leading-relaxed">
                   Illustrative of typical WCG underwriting parameters. Actual
                   loan terms vary by transaction. See{" "}
                   <a
                     href="/disclosures"
-                    className="underline hover:text-charcoal-400"
+                    className="underline hover:text-slate-400"
                   >
                     important disclosures
                   </a>
@@ -182,10 +182,10 @@ export default function TrackRecordContent() {
       <section className="section-padding-y bg-cream">
         <div className="max-w-3xl mx-auto section-padding text-center">
           <FadeIn>
-            <h2 className="font-serif text-display font-bold text-charcoal-950 mb-6">
+            <h2 className="font-serif text-display font-bold text-slate-950 mb-6">
               Request Historical Activity Data
             </h2>
-            <p className="text-body-lg text-charcoal-600 mb-8">
+            <p className="text-body-lg text-slate-600 mb-8">
               Loan-level portfolio information, historical activity data, and
               offering terms are made available to verified accredited
               investors through our offering documents.
@@ -193,7 +193,7 @@ export default function TrackRecordContent() {
             <Button href="/contact" variant="primary" size="lg">
               Request Investor Information
             </Button>
-            <p className="text-charcoal-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-slate-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
               This page is informational only and does not constitute an offer
               to sell or a solicitation of an offer to buy any security. Any
               offer is made only through definitive offering documents to
@@ -201,7 +201,7 @@ export default function TrackRecordContent() {
               Past performance is not indicative of future results. All
               investments involve risk, including the potential loss of
               principal. See{" "}
-              <a href="/disclosures" className="underline hover:text-charcoal-600">
+              <a href="/disclosures" className="underline hover:text-slate-600">
                 important disclosures
               </a>
               .

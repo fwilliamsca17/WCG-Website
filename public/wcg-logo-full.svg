@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" fill="none">
+  <title>Williams Capital Group LLC</title>
+  <g>
+    <path d="M 85 10 L 110 10 L 140 110 L 170 10 L 195 10 L 140 170 Z" fill="#8E939A"/>
+    <path d="M 5 10 L 30 10 L 60 110 L 90 10 L 115 10 L 60 170 Z" fill="#1B3A5C"/>
+  </g>
+  <rect x="225" y="22" width="2.5" height="136" fill="#1B3A5C"/>
+  <g font-family="'DM Sans','Helvetica Neue',Arial,sans-serif" font-weight="700" letter-spacing="0.04em">
+    <text x="250" y="55" font-size="34" fill="#1B3A5C">WILLIAMS</text>
+    <text x="250" y="100" font-size="34" fill="#8E939A">CAPITAL</text>
+    <text x="250" y="145" font-size="34" fill="#1B3A5C">GROUP <tspan fill="#8E939A">LLC</tspan></text>
+  </g>
+</svg>

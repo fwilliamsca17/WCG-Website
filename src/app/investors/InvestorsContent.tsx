@@ -95,25 +95,25 @@ export default function InvestorsContent() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-b from-charcoal-950 to-forest-950">
+      <section className="relative pt-32 pb-20 bg-gradient-to-b from-slate-950 to-navy-950">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
           backgroundSize: "40px 40px",
         }} />
         <div className="relative max-w-7xl mx-auto section-padding">
           <FadeIn>
-            <p className="label-text text-bronze-400 mb-4">For Investors</p>
+            <p className="label-text text-silver-400 mb-4">For Investors</p>
             <h1 className="font-serif text-display-lg font-bold text-white mb-6 max-w-3xl">
               Attractive Income With a Significant Margin of Safety
             </h1>
-            <p className="text-body-lg text-charcoal-300 max-w-2xl leading-relaxed">
+            <p className="text-body-lg text-slate-300 max-w-2xl leading-relaxed">
               Williams Capital Group operates a private lending strategy for
               accredited investors — focused on real estate-secured loans and
               disciplined underwriting with a capital preservation orientation.
             </p>
-            <div className="mt-8 bg-bronze-900/20 border border-bronze-600/30 rounded-lg p-5 max-w-2xl">
-              <p className="text-bronze-200 text-body-sm leading-relaxed">
-                <strong className="text-bronze-100">Informational only.</strong>{" "}
+            <div className="mt-8 bg-silver-900/20 border border-silver-600/30 rounded-lg p-5 max-w-2xl">
+              <p className="text-silver-200 text-body-sm leading-relaxed">
+                <strong className="text-silver-100">Informational only.</strong>{" "}
                 This page is not an offer to sell or a solicitation of an offer
                 to buy any security. Any offer will be made solely through
                 definitive offering documents to qualified accredited
@@ -128,7 +128,7 @@ export default function InvestorsContent() {
       <section className="relative -mt-8 z-10">
         <div className="max-w-6xl mx-auto section-padding">
           <div className="glass-card shadow-xl p-8 md:p-12">
-            <p className="label-text text-center text-bronze-600 mb-8">
+            <p className="label-text text-center text-silver-600 mb-8">
               Strategy at a Glance
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -140,13 +140,13 @@ export default function InvestorsContent() {
               ].map((stat, i) => (
                 <FadeIn key={stat.label} delay={i * 0.1}>
                   <div className="text-center">
-                    <p className="font-serif text-heading md:text-heading-lg font-bold text-forest-800">
+                    <p className="font-serif text-heading md:text-heading-lg font-bold text-navy-800">
                       {stat.value}
                     </p>
-                    <p className="font-semibold text-charcoal-800 text-body-sm mt-2">
+                    <p className="font-semibold text-slate-800 text-body-sm mt-2">
                       {stat.label}
                     </p>
-                    <p className="text-charcoal-500 text-xs mt-1">
+                    <p className="text-slate-500 text-xs mt-1">
                       {stat.detail}
                     </p>
                   </div>
@@ -168,7 +168,7 @@ export default function InvestorsContent() {
                   title="WCG Private Debt Fund"
                   align="left"
                 />
-                <div className="mt-8 space-y-6 text-charcoal-600 text-body leading-relaxed">
+                <div className="mt-8 space-y-6 text-slate-600 text-body leading-relaxed">
                   <p>
                     WCG&apos;s investment strategy focuses on seeking
                     risk-adjusted outcomes through a diverse range of real
@@ -194,7 +194,7 @@ export default function InvestorsContent() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-charcoal-950 rounded-2xl p-10">
+              <div className="bg-slate-950 rounded-2xl p-10">
                 <h3 className="font-serif text-heading font-semibold text-white mb-8">
                   Fund Terms
                 </h3>
@@ -204,7 +204,7 @@ export default function InvestorsContent() {
                       key={label}
                       className="flex justify-between items-center pb-4 border-b border-white/10 last:border-0 last:pb-0"
                     >
-                      <span className="text-charcoal-400 text-body-sm">
+                      <span className="text-slate-400 text-body-sm">
                         {label}
                       </span>
                       <span className="text-white font-medium text-body-sm text-right">
@@ -233,15 +233,15 @@ export default function InvestorsContent() {
           <div className="grid md:grid-cols-2 gap-8 mt-16">
             {INVESTMENT_PHILOSOPHY.map((item, i) => (
               <FadeIn key={item.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-8 rounded-2xl bg-ivory border border-charcoal-100 h-full">
-                  <div className="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center shrink-0">
-                    <item.icon size={22} className="text-forest-700" />
+                <div className="flex gap-6 p-8 rounded-2xl bg-ivory border border-slate-100 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center shrink-0">
+                    <item.icon size={22} className="text-navy-700" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-heading-sm font-semibold text-charcoal-950 mb-2">
+                    <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                    <p className="text-slate-600 text-body-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -253,18 +253,18 @@ export default function InvestorsContent() {
       </section>
 
       {/* Why Invest */}
-      <section className="section-padding-y bg-charcoal-950">
+      <section className="section-padding-y bg-slate-950">
         <div className="max-w-7xl mx-auto section-padding">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <FadeIn>
               <div>
-                <p className="label-text text-bronze-400 mb-4">
+                <p className="label-text text-silver-400 mb-4">
                   Why WCG
                 </p>
                 <h2 className="font-serif text-display font-bold text-white mb-6">
                   Built for Income &amp; Preservation
                 </h2>
-                <p className="text-charcoal-400 text-body leading-relaxed">
+                <p className="text-slate-400 text-body leading-relaxed">
                   WCG&apos;s mission is to pursue consistent income for
                   investors while prioritizing capital preservation — reflected
                   in conservative lending parameters and active portfolio
@@ -282,7 +282,7 @@ export default function InvestorsContent() {
                   >
                     <CheckCircle2
                       size={18}
-                      className="text-forest-400 mt-0.5 shrink-0"
+                      className="text-navy-400 mt-0.5 shrink-0"
                     />
                     <span className="text-white text-body-sm">{item}</span>
                   </div>
@@ -307,14 +307,14 @@ export default function InvestorsContent() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
             {PROCESS_STEPS.map((step, i) => (
               <FadeIn key={step.step} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl border border-charcoal-100 p-8 h-full">
-                  <span className="font-serif text-3xl font-bold text-forest-600 mb-4 block">
+                <div className="bg-white rounded-2xl border border-slate-100 p-8 h-full">
+                  <span className="font-serif text-3xl font-bold text-navy-600 mb-4 block">
                     {step.step}
                   </span>
-                  <h3 className="font-serif text-heading-sm font-semibold text-charcoal-950 mb-3">
+                  <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                  <p className="text-slate-600 text-body-sm leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -328,16 +328,16 @@ export default function InvestorsContent() {
       <section className="section-padding-y bg-white">
         <div className="max-w-4xl mx-auto section-padding">
           <FadeIn>
-            <div className="bg-forest-50 border border-forest-200 rounded-2xl p-8 md:p-10">
+            <div className="bg-navy-50 border border-navy-200 rounded-2xl p-8 md:p-10">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-10 h-10 rounded-lg bg-forest-100 flex items-center justify-center shrink-0">
-                  <AlertCircle size={20} className="text-forest-700" />
+                <div className="w-10 h-10 rounded-lg bg-navy-100 flex items-center justify-center shrink-0">
+                  <AlertCircle size={20} className="text-navy-700" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-heading font-semibold text-charcoal-950 mb-1">
+                  <h3 className="font-serif text-heading font-semibold text-slate-950 mb-1">
                     Verified Accredited Investors Only
                   </h3>
-                  <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                  <p className="text-slate-600 text-body-sm leading-relaxed">
                     WCG operates under{" "}
                     <strong>Rule 506(c) of Regulation D</strong>. Under 506(c),
                     accredited-investor status must be{" "}
@@ -352,12 +352,12 @@ export default function InvestorsContent() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <DollarSign size={18} className="text-forest-600" />
-                    <h4 className="font-semibold text-charcoal-950 text-body-sm">
+                    <DollarSign size={18} className="text-navy-600" />
+                    <h4 className="font-semibold text-slate-950 text-body-sm">
                       Income Threshold
                     </h4>
                   </div>
-                  <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                  <p className="text-slate-600 text-body-sm leading-relaxed">
                     Individual income exceeding $200,000 (or $300,000 jointly
                     with a spouse) in each of the two most recent years, with a
                     reasonable expectation of reaching the same level in the
@@ -366,12 +366,12 @@ export default function InvestorsContent() {
                 </div>
                 <div className="bg-white rounded-xl p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <BarChart3 size={18} className="text-forest-600" />
-                    <h4 className="font-semibold text-charcoal-950 text-body-sm">
+                    <BarChart3 size={18} className="text-navy-600" />
+                    <h4 className="font-semibold text-slate-950 text-body-sm">
                       Net Worth Threshold
                     </h4>
                   </div>
-                  <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                  <p className="text-slate-600 text-body-sm leading-relaxed">
                     Individual or joint net worth exceeding $1,000,000,
                     excluding the value of the primary residence.
                   </p>
@@ -383,21 +383,21 @@ export default function InvestorsContent() {
       </section>
 
       {/* Reg D banner */}
-      <section className="bg-charcoal-950 py-12">
+      <section className="bg-slate-950 py-12">
         <div className="max-w-5xl mx-auto section-padding">
           <FadeIn>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div>
-                <p className="label-text text-bronze-400 mb-3">
+                <p className="label-text text-silver-400 mb-3">
                   Regulation D Rule 506(c)
                 </p>
-                <p className="text-charcoal-300 text-body-sm leading-relaxed max-w-2xl">
+                <p className="text-slate-300 text-body-sm leading-relaxed max-w-2xl">
                   Interests are offered pursuant to Rule 506(c) of Regulation
                   D under the Securities Act of 1933. Available exclusively
                   to verified accredited investors. See{" "}
                   <a
                     href="/disclosures"
-                    className="text-bronze-400 underline hover:text-bronze-300"
+                    className="text-silver-400 underline hover:text-silver-300"
                   >
                     important disclosures
                   </a>
@@ -416,10 +416,10 @@ export default function InvestorsContent() {
       <section className="section-padding-y bg-cream">
         <div className="max-w-3xl mx-auto section-padding text-center">
           <FadeIn>
-            <h2 className="font-serif text-display font-bold text-charcoal-950 mb-6">
+            <h2 className="font-serif text-display font-bold text-slate-950 mb-6">
               Start the Conversation
             </h2>
-            <p className="text-body-lg text-charcoal-600 mb-8">
+            <p className="text-body-lg text-slate-600 mb-8">
               Contact our team to learn more about the WCG private debt fund,
               request offering documents, or discuss how our strategy can
               complement your portfolio.
@@ -427,7 +427,7 @@ export default function InvestorsContent() {
             <Button href="/contact" variant="primary" size="lg">
               Contact Us
             </Button>
-            <p className="text-charcoal-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-slate-400 text-xs mt-8 max-w-2xl mx-auto leading-relaxed">
               This website is for informational purposes only and does not
               constitute an offer to sell or a solicitation of an offer to buy
               any security. Any offer will be made only through definitive
@@ -435,7 +435,7 @@ export default function InvestorsContent() {
               Past performance is not indicative of future results. All
               investments involve risk, including the potential loss of
               principal. See{" "}
-              <a href="/disclosures" className="underline hover:text-charcoal-600">
+              <a href="/disclosures" className="underline hover:text-slate-600">
                 important disclosures
               </a>
               .

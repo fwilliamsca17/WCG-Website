@@ -9,10 +9,10 @@ export default function CTASection() {
       <div className="max-w-4xl mx-auto section-padding text-center">
         <FadeIn>
           <p className="label-text mb-4">For Accredited Investors</p>
-          <h2 className="font-serif text-display md:text-display-lg font-bold text-charcoal-950 mb-6">
+          <h2 className="font-serif text-display md:text-display-lg font-bold text-slate-950 mb-6">
             Access Institutional-Quality Private Debt
           </h2>
-          <p className="text-body-lg text-charcoal-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-body-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
             Learn how Williams Capital Group seeks to deliver consistent,
             risk-adjusted outcomes through California real estate-secured
             lending. Request informational materials.

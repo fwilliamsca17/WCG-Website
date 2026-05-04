@@ -38,16 +38,16 @@ export default function InvestmentHighlights() {
             const Icon = iconMap[item.icon];
             return (
               <FadeIn key={item.title} delay={i * 0.08}>
-                <div className="bg-white rounded-2xl p-8 border border-charcoal-100 hover:border-forest-200 hover:shadow-lg transition-all duration-300 h-full group">
-                  <div className="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center mb-5 group-hover:bg-forest-100 transition-colors">
+                <div className="bg-white rounded-2xl p-8 border border-slate-100 hover:border-navy-200 hover:shadow-lg transition-all duration-300 h-full group">
+                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center mb-5 group-hover:bg-navy-100 transition-colors">
                     {Icon && (
-                      <Icon size={22} className="text-forest-700" />
+                      <Icon size={22} className="text-navy-700" />
                     )}
                   </div>
-                  <h3 className="font-serif text-heading-sm font-semibold text-charcoal-950 mb-3">
+                  <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                  <p className="text-slate-600 text-body-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>

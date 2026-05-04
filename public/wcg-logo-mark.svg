@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" fill="none">
+  <title>Williams Capital Group</title>
+  <!-- Right V (silver/gray) drawn first -->
+  <path d="M 85 10 L 110 10 L 140 110 L 170 10 L 195 10 L 140 170 Z" fill="#8E939A"/>
+  <!-- Left V (navy) drawn on top so navy strokes overlay where they cross -->
+  <path d="M 5 10 L 30 10 L 60 110 L 90 10 L 115 10 L 60 170 Z" fill="#1B3A5C"/>
+</svg>

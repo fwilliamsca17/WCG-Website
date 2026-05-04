@@ -10,11 +10,11 @@
   }
 
   body {
-    @apply font-sans text-charcoal-950 bg-ivory antialiased;
+    @apply font-sans text-slate-950 bg-ivory antialiased;
   }
 
   ::selection {
-    @apply bg-forest-600 text-white;
+    @apply bg-navy-700 text-white;
   }
 }
 
@@ -28,19 +28,19 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-forest-700 to-forest-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-navy-800 to-navy-600 bg-clip-text text-transparent;
   }
 
   .glass-card {
-    @apply bg-white/80 backdrop-blur-sm border border-charcoal-100 rounded-2xl;
+    @apply bg-white/80 backdrop-blur-sm border border-slate-100 rounded-2xl;
   }
 
   .stat-number {
-    @apply font-serif text-display-lg md:text-display-xl font-bold text-forest-800;
+    @apply font-serif text-display-lg md:text-display-xl font-bold text-navy-800;
   }
 
   .label-text {
-    @apply text-label uppercase tracking-widest font-semibold text-bronze-600;
+    @apply text-label uppercase tracking-widest font-semibold text-silver-600;
   }
 }
 

@@ -7,7 +7,7 @@ import { ASSET_CLASSES } from "@/lib/constants";
 
 export default function FundOverview() {
   return (
-    <section className="section-padding-y bg-charcoal-950 relative overflow-hidden">
+    <section className="section-padding-y bg-slate-950 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
@@ -27,22 +27,22 @@ export default function FundOverview() {
         <div className="grid md:grid-cols-3 gap-6 mt-16">
           {ASSET_CLASSES.map((asset, i) => (
             <FadeIn key={asset.name} delay={i * 0.12}>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/8 hover:border-forest-600/30 transition-all duration-300 h-full">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/8 hover:border-navy-600/30 transition-all duration-300 h-full">
                 <h3 className="font-serif text-heading font-semibold text-white mb-4">
                   {asset.name}
                 </h3>
-                <p className="text-charcoal-400 text-body-sm leading-relaxed mb-6">
+                <p className="text-slate-400 text-body-sm leading-relaxed mb-6">
                   {asset.description}
                 </p>
                 <div className="pt-6 border-t border-white/10 space-y-3">
                   <div className="flex justify-between">
-                    <span className="text-charcoal-500 text-body-sm">LTV</span>
+                    <span className="text-slate-500 text-body-sm">LTV</span>
                     <span className="text-white font-medium text-body-sm">
                       {asset.ltvRange}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-charcoal-500 text-body-sm">Term</span>
+                    <span className="text-slate-500 text-body-sm">Term</span>
                     <span className="text-white font-medium text-body-sm">
                       {asset.termRange}
                     </span>
@@ -55,7 +55,7 @@ export default function FundOverview() {
 
         <FadeIn>
           <div className="text-center mt-14">
-            <Button href="/strategy" variant="outline" className="border-white/30 text-white hover:bg-white hover:text-charcoal-950">
+            <Button href="/strategy" variant="outline" className="border-white/30 text-white hover:bg-white hover:text-slate-950">
               View Full Strategy
             </Button>
           </div>

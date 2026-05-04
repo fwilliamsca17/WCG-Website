@@ -36,18 +36,18 @@ export default function AboutContent() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-b from-charcoal-950 to-forest-950">
+      <section className="relative pt-32 pb-20 bg-gradient-to-b from-slate-950 to-navy-950">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
           backgroundSize: "40px 40px",
         }} />
         <div className="relative max-w-7xl mx-auto section-padding">
           <FadeIn>
-            <p className="label-text text-bronze-400 mb-4">About WCG</p>
+            <p className="label-text text-silver-400 mb-4">About WCG</p>
             <h1 className="font-serif text-display-lg font-bold text-white mb-6 max-w-3xl">
               Eleven Years of Disciplined Capital Deployment
             </h1>
-            <p className="text-body-lg text-charcoal-300 max-w-2xl leading-relaxed">
+            <p className="text-body-lg text-slate-300 max-w-2xl leading-relaxed">
               Founded on the principle that sustainable outcomes are built
               through conservative underwriting and rigorous risk management —
               not aggressive yield-chasing.
@@ -67,7 +67,7 @@ export default function AboutContent() {
                   title="Built for Capital Preservation"
                   align="left"
                 />
-                <div className="mt-8 space-y-6 text-charcoal-600 text-body leading-relaxed">
+                <div className="mt-8 space-y-6 text-slate-600 text-body leading-relaxed">
                   <p>
                     Williams Capital Group LLC is dedicated to fulfilling its
                     mission of delivering a stable and consistent income stream
@@ -96,8 +96,8 @@ export default function AboutContent() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-white rounded-2xl border border-charcoal-100 p-10">
-                <h3 className="font-serif text-heading font-semibold text-charcoal-950 mb-8">
+              <div className="bg-white rounded-2xl border border-slate-100 p-10">
+                <h3 className="font-serif text-heading font-semibold text-slate-950 mb-8">
                   Fund at a Glance
                 </h3>
                 <div className="space-y-6">
@@ -112,22 +112,22 @@ export default function AboutContent() {
                   ].map(([label, value]) => (
                     <div
                       key={label}
-                      className="flex justify-between items-center pb-4 border-b border-charcoal-50 last:border-0 last:pb-0"
+                      className="flex justify-between items-center pb-4 border-b border-slate-50 last:border-0 last:pb-0"
                     >
-                      <span className="text-charcoal-500 text-body-sm">
+                      <span className="text-slate-500 text-body-sm">
                         {label}
                       </span>
-                      <span className="font-medium text-charcoal-950 text-body-sm text-right">
+                      <span className="font-medium text-slate-950 text-body-sm text-right">
                         {value}
                       </span>
                     </div>
                   ))}
                 </div>
-                <p className="text-charcoal-400 text-xs mt-6 leading-relaxed">
+                <p className="text-slate-400 text-xs mt-6 leading-relaxed">
                   Informational only. See{" "}
                   <a
                     href="/disclosures"
-                    className="underline hover:text-charcoal-600"
+                    className="underline hover:text-slate-600"
                   >
                     important disclosures
                   </a>
@@ -153,15 +153,15 @@ export default function AboutContent() {
           <div className="grid md:grid-cols-2 gap-8 mt-16">
             {VALUES.map((value, i) => (
               <FadeIn key={value.title} delay={i * 0.08}>
-                <div className="flex gap-6 p-6 rounded-2xl hover:bg-forest-50/50 transition-colors">
-                  <div className="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center shrink-0">
-                    <value.icon size={22} className="text-forest-700" />
+                <div className="flex gap-6 p-6 rounded-2xl hover:bg-navy-50/50 transition-colors">
+                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center shrink-0">
+                    <value.icon size={22} className="text-navy-700" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-heading-sm font-semibold text-charcoal-950 mb-2">
+                    <h3 className="font-serif text-heading-sm font-semibold text-slate-950 mb-2">
                       {value.title}
                     </h3>
-                    <p className="text-charcoal-600 text-body-sm leading-relaxed">
+                    <p className="text-slate-600 text-body-sm leading-relaxed">
                       {value.description}
                     </p>
                   </div>
@@ -176,10 +176,10 @@ export default function AboutContent() {
       <section className="section-padding-y bg-cream">
         <div className="max-w-3xl mx-auto section-padding text-center">
           <FadeIn>
-            <h2 className="font-serif text-display font-bold text-charcoal-950 mb-6">
+            <h2 className="font-serif text-display font-bold text-slate-950 mb-6">
               Ready to Learn More?
             </h2>
-            <p className="text-body-lg text-charcoal-600 mb-8">
+            <p className="text-body-lg text-slate-600 mb-8">
               Request our investor materials to understand how WCG can fit into
               your portfolio.
             </p>

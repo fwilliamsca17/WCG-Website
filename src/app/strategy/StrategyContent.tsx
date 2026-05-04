@@ -84,20 +84,20 @@ export default function StrategyContent() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-b from-charcoal-950 to-forest-950">
+      <section className="relative pt-32 pb-20 bg-gradient-to-b from-slate-950 to-navy-950">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
           backgroundSize: "40px 40px",
         }} />
         <div className="relative max-w-7xl mx-auto section-padding">
           <FadeIn>
-            <p className="label-text text-bronze-400 mb-4">
+            <p className="label-text text-silver-400 mb-4">
               Investment Strategy
             </p>
             <h1 className="font-serif text-display-lg font-bold text-white mb-6 max-w-3xl">
               Short-Term Real Estate Secured Lending
             </h1>
-            <p className="text-body-lg text-charcoal-300 max-w-2xl leading-relaxed">
+            <p className="text-body-lg text-slate-300 max-w-2xl leading-relaxed">
               A conservative, collateral-first approach to private debt —
               targeting attractive risk-adjusted returns while maintaining
               institutional-quality underwriting standards.
@@ -117,7 +117,7 @@ export default function StrategyContent() {
                   title="Why Private Real Estate Debt?"
                   align="left"
                 />
-                <div className="mt-8 space-y-6 text-charcoal-600 text-body leading-relaxed">
+                <div className="mt-8 space-y-6 text-slate-600 text-body leading-relaxed">
                   <p>
                     Private real estate debt offers accredited investors a
                     compelling alternative to traditional fixed-income
@@ -136,7 +136,7 @@ export default function StrategyContent() {
                       <li key={item} className="flex items-start gap-3">
                         <CheckCircle2
                           size={18}
-                          className="text-forest-600 mt-0.5 shrink-0"
+                          className="text-navy-600 mt-0.5 shrink-0"
                         />
                         <span>{item}</span>
                       </li>
@@ -147,7 +147,7 @@ export default function StrategyContent() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-charcoal-950 rounded-2xl p-10 text-white">
+              <div className="bg-slate-950 rounded-2xl p-10 text-white">
                 <h3 className="font-serif text-heading font-semibold mb-8">
                   Fund Parameters
                 </h3>
@@ -166,7 +166,7 @@ export default function StrategyContent() {
                       key={label}
                       className="flex justify-between items-center pb-4 border-b border-white/10 last:border-0 last:pb-0"
                     >
-                      <span className="text-charcoal-400 text-body-sm">
+                      <span className="text-slate-400 text-body-sm">
                         {label}
                       </span>
                       <span className="font-medium text-body-sm text-right">
@@ -195,25 +195,25 @@ export default function StrategyContent() {
           <div className="grid lg:grid-cols-3 gap-8 mt-16">
             {LOAN_PROGRAMS.map((program, i) => (
               <FadeIn key={program.name} delay={i * 0.1}>
-                <div className="bg-ivory rounded-2xl p-8 border border-charcoal-100 h-full">
-                  <div className="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center mb-5">
-                    <program.icon size={22} className="text-forest-700" />
+                <div className="bg-ivory rounded-2xl p-8 border border-slate-100 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center mb-5">
+                    <program.icon size={22} className="text-navy-700" />
                   </div>
-                  <h3 className="font-serif text-heading font-semibold text-charcoal-950 mb-3">
+                  <h3 className="font-serif text-heading font-semibold text-slate-950 mb-3">
                     {program.name}
                   </h3>
-                  <p className="text-charcoal-600 text-body-sm leading-relaxed mb-6">
+                  <p className="text-slate-600 text-body-sm leading-relaxed mb-6">
                     {program.description}
                   </p>
                   <ul className="space-y-2">
                     {program.details.map((detail) => (
                       <li
                         key={detail}
-                        className="flex items-center gap-2 text-body-sm text-charcoal-700"
+                        className="flex items-center gap-2 text-body-sm text-slate-700"
                       >
                         <ArrowDown
                           size={12}
-                          className="text-forest-600 rotate-[-90deg]"
+                          className="text-navy-600 rotate-[-90deg]"
                         />
                         {detail}
                       </li>
@@ -227,7 +227,7 @@ export default function StrategyContent() {
       </section>
 
       {/* Process */}
-      <section className="section-padding-y bg-charcoal-950">
+      <section className="section-padding-y bg-slate-950">
         <div className="max-w-7xl mx-auto section-padding">
           <FadeIn>
             <SectionHeading
@@ -241,14 +241,14 @@ export default function StrategyContent() {
           <div className="grid md:grid-cols-2 gap-6 mt-16">
             {PROCESS_STEPS.map((step, i) => (
               <FadeIn key={step.step} delay={i * 0.1}>
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-forest-600/30 transition-colors h-full">
-                  <span className="font-serif text-3xl font-bold text-forest-500 mb-4 block">
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-navy-600/30 transition-colors h-full">
+                  <span className="font-serif text-3xl font-bold text-navy-500 mb-4 block">
                     {step.step}
                   </span>
                   <h3 className="font-serif text-heading-sm font-semibold text-white mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-charcoal-400 text-body-sm leading-relaxed">
+                  <p className="text-slate-400 text-body-sm leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -262,10 +262,10 @@ export default function StrategyContent() {
       <section className="section-padding-y bg-cream">
         <div className="max-w-3xl mx-auto section-padding text-center">
           <FadeIn>
-            <h2 className="font-serif text-display font-bold text-charcoal-950 mb-6">
+            <h2 className="font-serif text-display font-bold text-slate-950 mb-6">
               Invest with Confidence
             </h2>
-            <p className="text-body-lg text-charcoal-600 mb-8">
+            <p className="text-body-lg text-slate-600 mb-8">
               Request our investor package for complete details on fund terms,
               performance, and subscription information.
             </p>
